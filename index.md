@@ -12,7 +12,7 @@ I am **Pranay Kumar Eedara**
 
 
 
-* Office: WEB 301RA
-* Phone: (979) 845-6204
-* Fax: (979) 862-4630
+* Office: WEB 301P
+* Phone: (979) 739 0037
+
 
