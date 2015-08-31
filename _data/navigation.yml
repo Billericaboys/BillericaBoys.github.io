@@ -4,10 +4,10 @@
   url: # /about/
 
 - title: Resume # Sample Posts
-  url: # /posts/
+  url:  /Resume/
 
 - title: Projects # Theme Setup
-  url: # /theme-setup/
+  url:  /Projects/
 
 - title: Publications # Made Mistakes
-  url: # http://mademistakes.com
+  url:  /Publications/ #http://mademistakes.com
