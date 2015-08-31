@@ -9,9 +9,11 @@ image:
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/ -->
 
 Howdy!	
-	
+    
+    
 I'm Pranay Kumar, a graduate student in Electrical and Computer Engineering department at Texas A&M University, College Station. I received my B.Tech Degree in Electrical Engineering from Indian Institute of Technology - Bhubaneswar, India.	
-	
+   
+   
 My research interests are in i) Computer systems and software with emphasis on real time embedded systems and ii) Artificial Intelligence for Robotics
 
 
