@@ -1,10 +1,61 @@
-# Site settings
-exclude: [".gitignore", "README.md", "Gemfile"]
-title: ""
-email: "epranaykumar@tamu.edu"
-description: "Academic website of Pranay Kumar Eadara"
-url: "https://epranaykumar.github.io" # GitHub
-baseurl: "" # GitHub
-github_username: "epranaykumar"
-# Build settings
-markdown: kramdown
+# Site wide configuration
+
+title:            Pranay Kumar
+locale:           en_US
+url: http://pke10.github.io
+
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+
+# Site owner
+owner: 
+  name: Pranay Kumar
+  avatar: web_pic.jpg #webpage photo
+  bio: "Computer Engineering, Texas A&M University, College Station "
+  email: epranaykumar@tamu.edu
+  disqus-shortname:
+  twitter: #username
+  facebook: #Pranay Kumar Eedara
+  google:
+    plus: #Pranay Kumar Eedara
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: pke10
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  codepen: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
