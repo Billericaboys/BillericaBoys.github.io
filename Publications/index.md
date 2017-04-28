@@ -20,7 +20,7 @@ image:
 IEEE Transactions on Signal Processing, 2017.
 
 ## Conference Proceedings
-P. Eedara, H. Li, N. Janakiraman, N. R. A. Tungala, T. Taghavi, J.-F. Chamberland, G. H. Huff
+* P. Eedara, H. Li, N. Janakiraman, N. R. A. Tungala, T. Taghavi, J.-F. Chamberland, G. H. Huff
 [Enhancing Machine Learning Techniques for Occupancy Estimation and Socio-Physical Graph Reconstruction Using Reconfigurable Antennas](http://www.2017apsursi.org/Papers/ViewPapers.asp?PaperNum=2522)
 AP-S/URSI Conference, IEEE, 2017.
 
