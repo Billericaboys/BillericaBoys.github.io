@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://localhost:49558/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <title>MiniProjects | Embedded Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="css/metro-bootstrap.css">
+
+
+    <style>
+        body
+        {
+            padding-top: 70px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+    body,td,th {
+	font-size: 17.5px;
+}
+h1 {
+	font-size: 56px;
+}
+    .style8 {font-size: 15px; }
+	.myStyle {font-size: 23px; font-family:Arial, Helvetica, sans-serif }
+	.arialFont {font-family:Arial, Helvetica, sans-serif }
+	.footerStyle {text-decoration:overline}
+    </style>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+<body data-spy="scroll" data-target=".subnav" data-offset="50" screen_capture_injected="true" background="image/bg.png">
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </a><a class="brand" href="index.html">Udaya Bhaskar Kothapalli</a>
+              <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class=""><a href="index.html">Home</a> </li>
+                        <li class=""><a href="Resume.html">Resume</a> </li>
+                        <li class="active"><li class=""><a href="MyProjects.html">MyProjects</a> </li>
+						<li class=""><a href="Publications.html">Publications</a> </li>
+						<li class=""><a href="AboutMe.html">AboutMe</a> </li>
+						
+                    </ul>
+              </div>
+          </div>
+        </div>
+    </div>
+<div class="container">
+        <div align="justify">
+          <!-- Masthead
+================================================== -->
+  </div>
+       <header class="jumbotron masthead"></header>
+  <div class="inner">
+  	<section id="WVehicle">
+	
+			<div>
+				<h1 align="justify">Embedded Systems Applications </h1>
+			</div>
+	
+	<ul class="breadcrumb">
+	  <li>
+		<a href="index.html" class="style8">Home</a> <span class="divider">/</span>	  </li>
+	  <li>
+		<a href="CourseProject.html" class="style8">MyProjects</a> <span class="divider">/</span>	  </li>
+	  <li class="active style8">Embedded Systems </li>
+	</ul>
+	
+    <h2 align="justify">Coming Soon...!!</h2>
+	<!--<div align="justify">
+	  <table>
+  <tr>
+    <td><div align="justify">Wind power generation is the fastest growing energy conversion system since the last two decades. The most important issue with the wind power is the uncertainty associated with it. Independent system operators who have to manage supply and demand on a grid system can avoid many of the balancing issues if accurate forecasts of wind output are available. This work uses a
+statistical approach for wind power prediction. Generally
+statistical models require historical wind power data to train the
+model. Since, newly established plants do not contain historical
+data, this models fail to accurately predict the wind power until
+some data is collected. This paper addresses this issue by
+presenting models that are self-adaptive and can be used right
+from the beginning of the plant. These algorithms converge after
+a few days of operation.</div></td>
+    <td><span class="span3">
+          <a class="thumbnail">
+            <p class="myStyle">Embedded Systems Design Training</p>
+			<p class="myStyle">OrangeResearchLabs, India </p>
+			<p class="arialFont">Supervisor: ***** </p>
+			<small class="arialFont">CEO, Orange Research Labs </small>
+          </a>
+        </span></td>
+  </tr>
+</table>    
+    </div>
+	<br/>
+	<h2>Mathematical Model Description</h2>
+	<div align="justify">
+	<p>Fig.1. gives the details of the model we developed for Wind Power Forecasting without using any historical data. The proposed models receive the vector X as input and produce the output Y. Where v(t)- Velocity and d(t)- Direction of Wind. The past values of wind velocity and direction are fed to the model to increase the robustness of the system.</p>
+	<figure>    
+	<div align="center"><img src="image/WPF.png" alt="" border="1"></div>
+	<figcaption>
+	  <div align="center" class="arialFont"><small>Fig.1 - Mathematical Model used. </small></div>
+	</figcaption>
+	</figure>
+	<p>In general, the functional expansion-based neural
+network models were single-layer ANN structure possessing
+higher rate of convergence. Further, the FLANN structure offers
+less computational complexity because of the fact that there is
+no hidden layer as in Multi-Layer Perceptron (MLP) network.</p>
+<p>Fig.2 shows the Functional Expansion block for the three
+models: Functional Link ANN (FLANN), LeNN (Legendre Neural Network), ChNN (Chebyshev Neural Network).</p>
+<figure>    
+	<div align="center"><img src="image/Model.png" alt="" border="1"></div>
+	<figcaption>
+	  <div align="center" class="arialFont"><small>Fig.2 - (a) FLANN (b) Legendre Neural Network (c) Chebyshev Neural Network. </small></div>
+	</figcaption>
+	</figure>
+	</div>
+	
+	<h2>Working and Training the Model</h2>
+	<div align="justify">
+	<p>The models are fed with input vector X(t), and the wind
+power is predicted for time instant (t+1). When the
+wind power value comes from the actual plant at time
+instant (t+1), we compare it with the predicted value and train
+the model according to RLS algorithm. Next, X(t+1) is given
+as the input. This process is repeated continuously for predicting
+wind power generation for next hour. So, this model doesn’t
+require any historic data for training unlike the conventional
+models. The model converges after some days of operation.</p>
+	</div>
+	<h2>Performance Measures </h2>
+    <div align="justify">
+  <p>TABLE shows the comparison of different parameter
+measures of the three models. All these values are measured
+under identical input set and the output set.</p>
+<p>MAE: Mean Absolute Error; RMSE:Root Mean Square Error; MRE: Mean Relative Error </p>
+<div align="center">
+<table border="1px">
+  <tr>
+    <th scope="col">Quantity</th>
+    <th scope="col">FLANN</th>
+    <th scope="col">LeNN</th>
+    <th scope="col">ChNN</th>
+  </tr>
+  <tr>
+    <th scope="row">MAE</th>
+    <td>0.1033</td>
+    <td>0.2727</td>
+    <td>0.2223</td>
+  </tr>
+  <tr>
+    <th scope="row">RMSE</th>
+    <td>0.2116</td>
+    <td>1.1237</td>
+    <td>0.5128</td>
+  </tr>
+  <tr>
+    <th scope="row">MRE</th>
+    <td>0.0097</td>
+    <td>0.0248</td>
+    <td>0.0213</td>
+  </tr>
+</table>
+</div>
+<p>The wind power forecasting is an essential working model
+the wind power operators must follow in order to manage the
+energy from all the sources. It has got a practical importance.</p>
+<p>Three different models are designed and used for wind
+power forecasting. From the error convergence plots, it can be
+seen that all the three models converge and stay stable after some
+days of operation. The authors see that the ChNN has an overall
+better performance from the TABLE. But FLANN converges
+faster.</p>
+
+  </div>
+  
+  <h2>Future Scope</h2>
+  <div align="justify">
+  <p>The future work in this research area include: </p>
+  <ul>
+    <li>Applying these models for Long Term prediction of wind power.</li>
+    <li>Many soft and evolutionary computational models can be used for forecasting. We can find the best model by comparing the performance parameers.</li>
+    <li>These models can also be applied to stock market prediction accurately.</li>
+  </ul>
+  </div>-->
+       
+  <!--<hr class="soften">-->
+  <!-- /.marketing -->
+          
+          <!-- Footer
+      ================================================== -->
+</div>
+<br/><br>
+<br/><br>
+<br/><br>
+<br/><br>
+<br/><br>
+<br/><br>
+<br/>
+    <footer class="footer">
+        
+      <p align="justify" class="footerStyle">Copyrights reserved © UdayaBhaskar</p>
+  </footer>
+  </div>
+    <!-- /container -->
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="docs/jquery-1.8.0.js"></script>
+<script type="text/javascript" src="docs/bootstrap-tooltip.js"></script>
+<script type="text/javascript" src="docs/bootstrap-alert.js"></script>
+<script type="text/javascript" src="docs/bootstrap-button.js"></script>
+<script type="text/javascript" src="docs/bootstrap-carousel.js"></script>
+<script type="text/javascript" src="docs/bootstrap-collapse.js"></script>
+<script type="text/javascript" src="docs/bootstrap-dropdown.js"></script>
+<script type="text/javascript" src="docs/bootstrap-modal.js"></script>
+<script type="text/javascript" src="docs/bootstrap-popover.js"></script>
+<script type="text/javascript" src="docs/bootstrap-scrollspy.js"></script>
+<script type="text/javascript" src="docs/bootstrap-tab.js"></script>
+<script type="text/javascript" src="docs/bootstrap-transition.js"></script>
+<script type="text/javascript" src="docs/bootstrap-typeahead.js"></script>
+<script type="text/javascript" src="docs/jquery.validate.js"></script>
+<script type="text/javascript" src="docs/jquery.validate.unobtrusive.js"></script>
+<script type="text/javascript" src="docs/jquery.unobtrusive-ajax.js"></script>
+ 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36060270-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body></html>

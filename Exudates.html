@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Projects | Hard Exudates Extraction</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Academic website of Uday">
+    <meta name="author" content="Udaya Bhaskar Kothapalli">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body data-spy="scroll" data-target=".subnav" data-offset="50" screen_capture_injected="true" background="images/bg.png">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-default">
+
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><b>Udaya Bhaskar Kothapalli</b></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html"><b>Home</b></a></li>
+
+
+                <li><a href="Resume.html"><b>Resume</b></a></li>
+                <li><a href="MyProjects.html"><b>Projects</b></a></li>
+                <li><a href="Publications.html"><b>Publications</b></a></li>
+                <li><a href="AboutMe.html"><b>AboutMe</b></a></li>
+
+                <!--<li><a href="#"><i class="fa fa-github-square fa-3x"></i></a></li> -->
+            </ul>
+
+
+
+        </div>
+    </div>
+</nav>
+<div class="container">
+
+    <div class="jumbotron">
+        <p id="WVehicle"> </p>
+
+        <div>
+            <h1>FLANN based Exudates Extraction  </h1>
+        </div>
+
+        <ul class="breadcrumb">
+            <li>
+                <a href="index.html" class="style8">Home</a> <span class="divider">/</span>	  </li>
+            <li>
+                <a href="MyProjects.html" class="style8">MyProjects</a> <span class="divider">/</span>	  </li>
+            <li class="active style8">FLANN based Exudates Extraction</li>
+        </ul>
+        <div class="row">
+
+
+            <div class="col-md-9 col-sm-9">
+                <div class="padadjust"><h2>Motivation</h2>
+                    As a continuation to the Glaucoma detection project we have now removed the Blood vessels from the fundus image. So the next step is to remove the Hard exudates which obstruct the ONH detection.
+
+                    <br><br>ONH is the main marker to detect Glaucoma, but the extraction of ONH from fundus images is not accurate due to the presence of
+                    Exudates and other fundus pathogens. So in this study Blood vessels segmentation is the first step. I have applied Active contours(snakes) for this purpose.
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <a class="thumbnail">
+                    B.Tech Project- <small>(Jan-May 2014)</small><br>
+                    IIT Bhubaneswar, India<br> School of Electrical Sciences <br>
+                    Supervisor: Dr. N. B.Puhan  <br>
+
+                </a>
+            </div>
+
+            <br/>
+        </div>
+        <div class="row">
+
+            <div class="padadjust">
+                <div class="col-sm-12 col-md-12">
+                    <div class="thumbnail">
+                        <img src="images/projects/btp/exudate.png" alt="Fundus Image containing Exudates" border="1">
+                        <div class="caption">
+
+                            <h4 align="center">Fig.1 - Fundus Image containing Exudatesn</h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-12">
+                <h2>Methodology</h2>
+                <div class="padadjust">
+                    We have developed a Classification-based algorithm to extract Exudates because these approaches proved to give better performance and also have a huge scope for the implementation of the existing evolutionary algorithms.
+                    The Classification-based methods can be broadly divided into three different steps. <ol> <li> Candidate region extraction</li> <li> Feature extraction</li> <li> Classification</li></ol>
+
+                    <br>
+                    <h3>	1. Candidate region extraction </h3>
+                    This is the first step in the extraction process where we extract all the pixels that are probable to be exudate pixels. All the yellowish objects in the image are coarsely separated, these are the Hard Exudates candidate regions which are processed further to classify.
+                    In this study, we have employed the <a href="http://www.ncbi.nlm.nih.gov/pubmed/15854840">Luminosity and contrast Normalization </a> due to its better estimation of exudate pixels. Other methods are:
+                    <br>
+
+                    <ol>
+                        <li> Luminosity and contrast normalization.  </li>
+                        <li> 	K-means clustering </li>
+                        <li> 	Fuzzy C-means Clustering </li>
+                        <li> 	LoG Transformation on different Intensity Bands </li>
+                        <li> 	Stationery Wavelet Transform </li>
+                    </ol>
+
+                    <h3>	2. Feature Extraction </h3>
+                    Feature selection for solving a classification based problems depends on the discriminatory power of features. Most of the traditional feature selection methods are classifier-dependent. On the other hand, for a medical image analysis a classifier independent feature analysis is more beneficiary in terms of robustness and scalability. The ideal features are defined by their ability to gather information concerning the structure of the data rather than serving the requirements of a particular classifier.
+
+                    Logistic regression based feature selection method is most commonly used for obtaining classifier- independent features. These are the following 13 features selected based on their higher discriminatory.
+                    <br> <br>
+                    <ol>
+                        <li>       Mean of blue channel intensity inside the region.  </li>
+                        <li>    Mean of green channel intensity inside the region.  </li>
+                        <li>    Standard deviation of the red channel inside the region.  </li>
+                        <li>    Standard deviation of the blue channel inside the region  </li>
+                        <li>     Mean of green channel intensity around the region.  </li>
+                        <li>    Mean of blue channel intensity around the region  </li>
+                        <li>   Region centroid in blue channel: x  </li>
+                        <li>  Region centroid in blue channel: y  </li>
+                        <li>    Color difference of the Red channel    </li>
+                        <li>    Color difference of the green channel  </li>
+                        <li>    Color difference of the blue channel  </li>
+                        <li>   Region compactness  </li>
+                        <li>  Homogeneity   </li>
+
+                    </ol>
+
+                    <h3> 3. Classification </h3>
+                    <a href="http://www.osti.gov/scitech/biblio/5238955">FLANN model, first proposed by  Pao </a> is a
+                        single layered neural network with single neuron at the output. The architecture of the FLANN contains less computational load and
+                        high convergence rate than those of traditional neural networks due to its single layered structure. FLANN model can capture the
+                        non-linear relationship between the inputs and the output unlike the Multiple Regression which can capture only linear relationship between them.
+                        Below figure shows the simplified block diagram of the FLANN model. The elements of the input pattern vector applied to the FLANN model are the feature
+                        vectors obtained from the candidate regions and the output of the model is the 1 if the region is an exudate otherwise 0. The conventional non-linear
+                        functional expansions employed in the model are Trigonometric, Legendre & Chebyshev. In this study, only trigonometric expansion is employed as it is
+                        observed experimentally that trigonometric expansion provides better performance when compared to others.
+                </div>
+            </div>
+
+
+
+            <div class="padadjust">
+                <div class="col-sm-12 col-md-12">
+                    <div class="thumbnail">
+                        <img src="images/projects/btp/flann.png" alt="FLANN structure" border="1">
+                        <div class="caption">
+
+                            <h5 align="center">Fig.2 - Functional Link Artificial Neural Network structure.</h5>
+
+                        </div>
+
+                    </div>
+                </div>
+</div>
+
+            <div class="padadjust">
+
+                <div class="col-sm-12 col-md-12">
+                    <h2>Results</h2>
+
+                        We have used the publicly available <a href="http://www2.it.lut.fi/project/imageret/diaretdb1/">DIARETDB1 </a> & <a href="http://www2.it.lut.fi/project/imageret/diaretdb0/">DIARETDB0 </a> database. The database has provided the rough ground truth and to get a more accurate classifier,
+                        we have manually labeled hard exudates in region level using the rough ground truth as the reference. For training the classifiers we have used 1290 exudate
+                        regions and 800 Non Exudate regions for training the classifiers and the minimum size of an exudate region is assumed to be 10.
+                        The simulation results were shown for the following methods using image 5 available in the DIARETDB1 database
+
+                </div>
+
+
+
+
+
+                <div class="col-sm-12 col-md-12">
+                    <div class="thumbnail">
+                        <img src="images/projects/btp/exuimage.png" alt="Green Channel of Fundus Image" border="1">
+                        <div class="caption">
+
+                            <h5 align="center">Fig.3 - Image Details: image-05(Green channel), DIARETDB1 database.</h5>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12">
+                    The Green channel of the fundus image is used because of it gives high contrast in the image with less noise.
+
+                </div>
+
+                <div class="col-sm-12 col-md-12">
+                    <div class="thumbnail">
+                        <img src="images/projects/btp/groutrut.png" alt="Exudate Ground Truth" border="1">
+                        <div class="caption">
+
+                            <h5 align="center">Fig.4 - Ground Truth for Exudate extraction.</h5>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12">
+                    The available online database do not provide a quantitative ground truth, hence we manually computed the ground truth with the help of a ophthalmologist.
+
+
+                </div>
+
+
+
+                <div class="col-sm-12 col-md-12">
+                    <div class="thumbnail">
+                        <img src="images/projects/btp/candi.png" alt="LCN Candidate Regions" border="1">
+                        <div class="caption">
+
+                            <h5 align="center">Fig.5 - LCN Candidate Regions.</h5>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12">
+                    Candidate regions are selected by thresholding the image at the intensity on the right tail of the
+                    histogram having probability of 10 % of the peak value. The candidate regions obtained after thresholding serve for our further steps.
+
+                </div>
+
+                <div class="col-sm-12 col-md-12">
+                    <div class="thumbnail">
+                        <img src="images/projects/btp/flannout.png" alt="FLANN output" border="1">
+                        <div class="caption">
+
+                            <h5 align="center">Fig.6 - FLANN Classifier Output.</h5>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12">
+                    The FLANN classifier output which has segmented out the Hard exudates from the fundus image.
+
+
+                </div>
+
+
+
+                <div class="col-sm-12 col-md-12">
+                    <div class="thumbnail">
+                        <img src="images/projects/btp/MLPvsFLANN.png" alt="MSE graph " border="1">
+                        <div class="caption">
+
+                            <h5 align="center">Fig.7 - Mean Square Error graph showing Convergence rate between FLANN and MLANN.</h5>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12">
+                    The Mean Square Error (MSE) graph of FLANN and MLANN classifiers is shown. It can be observed that the FLANN model
+                    has a better convergence rate when compared to the MLANN model.
+                </div>
+
+                <div class="col-sm-12 col-md-12">
+                    <div class="thumbnail">
+                        <img src="images/projects/btp/exucount.png" alt="Comparison for #of exudates " border="1"">
+                        <div class="caption">
+
+                            <h5 align="center">Fig.8 - Comparison between MLANN, RBF and FLANN in terms of #of Exudates. </h5>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12">
+                    The number of exudate regions classified for all images in the database are shown. From the figure we can say that the MLANN
+                    classifier has a more tendency to classify the candidate region as an exudate region.
+
+
+                </div>
+
+
+                <div class="col-sm-12 col-md-12">
+                    <h2>Conclusion</h2>
+
+
+                    <ul>
+                        <li>The experimental results showed that FLANNs can detect HEs effectively and distinguish HEs accurately from other interferences when compared with MLP and RBF classifiers.</li>
+                        <li>The training time is hugely reduced with the use of FLANN classifier, when compared to the other two classifiers, MLANN and RBF.</li>
+
+                    </ul> <br>
+
+                    <code><a href="#WVehicle" class="style6">To the Top</a></code>
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+            <!--<hr class="soften">-->
+            <!-- /.marketing -->
+
+            <!-- Footer
+        ================================================== -->
+
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+
+
+        <p class="pull-left"> Copyright © <a href="index.html">Udaya Bhaskar</a></p><p class="pull-right"><a style="color:inherit;" href="https://github.com/ubkothapalli" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
+        <!--<div class="pull-right">
+            <ul class="nav nav-pills payments">
+              <li><a href="#"><i class="fa fa-github-square fa-2x"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+
+
+            </ul>
+        </div>
+        -->
+
+
+    </div>
+
+
+</footer>
+
+
+</body></html>

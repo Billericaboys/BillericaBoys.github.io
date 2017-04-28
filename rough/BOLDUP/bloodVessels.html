@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://localhost:49558/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <title>MyProjects | Blood Vessels Segmentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="css/metro-bootstrap.css">
+
+
+    <style>
+        body
+        {
+            padding-top: 70px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+    body,td,th {
+	font-size: 17.5px;
+}
+h1 {
+	font-size: 56px;
+}
+    .style8 {font-size: 15px; }
+	.myStyle {font-size: 23px; font-family:Arial, Helvetica, sans-serif }
+	.arialFont {font-family:Arial, Helvetica, sans-serif }
+	.footerStyle {text-decoration:overline}
+    </style>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+<body data-spy="scroll" data-target=".subnav" data-offset="50" screen_capture_injected="true" background="image/bg.png">
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </a><a class="brand" href="index.html">Udaya Bhaskar Kothapalli</a>
+              <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class=""><a href="index.html">Home</a> </li>
+                        <li class=""><a href="Resume.html">Resume</a> </li>
+                        <li class="active"><li class=""><a href="MyProjects.html">MyProjects</a> </li>
+						<li class=""><a href="Publications.html">Publications</a> </li>
+						<li class=""><a href="AboutMe.html">AboutMe</a> </li>
+						
+                    </ul>
+              </div>
+          </div>
+        </div>
+    </div>
+<div class="container">
+        <div align="justify">
+          <!-- Masthead
+================================================== -->
+  </div>
+       <header class="jumbotron masthead"></header>
+  <div class="inner">
+  	<section id="WVehicle">
+	
+			<div>
+				<h1 align="justify">Blood Vessel Segmentation <small>(BTP:1/2)</small></h1>
+			</div>
+	
+	<ul class="breadcrumb">
+	  <li>
+		<a href="index.html" class="style8">Home</a> <span class="divider">/</span>	  </li>
+	  <li>
+		<a href="MyProjects.html" class="style8">MyProjects</a> <span class="divider">/</span>	  </li>
+	  <li class="active style8">Blood Vessel Segmentation (BTP:1/2)</li>
+	</ul>
+	
+    <h2 align="justify">Motivation</h2>
+	<div align="justify">
+	  <table>
+  <tr>
+    <td><div align="justify">Glaucoma is one of the various eye-related conditions that require early treatment.
+	It is a manifestation of a group of Conditions originated from different causes resulting in an increased pressure inside the eye.
+	Often, if defects were to be detected, they would be too late as significant damage to the nerve fibres may have occurred, causing a certain level of 
+	visual field loss. Therefore, as there is no cure for glaucoma, early detection of glaucoma is important because it can minimise damage and vision loss 
+	and allow for prompt and adequate treatments in avoiding blindness.
+	<br><br>ONH is the main marker to detect Glaucoma, but the extraction of ONH from fundus images is not accurate due to the presence of Blood vessels and other fundus pathogens. So in this study Blood vessels segmentation is the first step. I have applied Active contours(snakes) for this purpose.</div></td>
+    <td><span class="span3">
+          <a class="thumbnail">
+            <p class="myStyle">B.Tech Project- <small>(Aug-Nov 2013)</small></p>
+			<p class="myStyle">IIT Bhubaneswar, India</p>
+			<p class="arialFont">Supervisor: Dr. N. B. Puhan</p>
+			<small class="arialFont">School of Electrical Sciences</small>
+          </a>
+        </span></td>
+  </tr>
+</table>    
+    </div>
+	<br/>
+	<figure>    
+	<div align="center"><img src="image/projects/btp/glaucomaSteps.png" alt="Glaucoma detection steps" border="1"></div>
+	<figcaption>
+	  <div align="center" class="arialFont"><small>Fig.1 - Steps for Glaucoma detection </small></div>
+	</figcaption>
+	</figure>
+	
+	
+	
+	<h2>Active Contour Model</h2>
+	<div align="justify">
+		<p>For segmenting the blood vessels we have used a deform able model based approach known as Active contours. This model is more generic and robust as it's performance is unaffected by the blood vessels inheriting properties such as vessel crossing and branching and Central Vessel Reflex problem. It also provides the details of the vessel widths and  is having greater scope to develop. <br>
+
+	<br>Active contour model represents an object boundary or some other salient image features as a parametric curve (which is referred as snake). 
+
+	An Energy function E is associated with the snake is defined as the sum of <ol> <li> Internal energy </li> <li> External energy  </li> <li> Image forces </li> </ol>The problem of finding object boundary is cast as an energy minimization problem. Internal energies give the model tension and stiffness whereas External energies come from high-level sources such as human operators or automatic initialisation procedures. Image energy is used to drive the model towards salient features such as light and dark regions, edges, and terminations. <br> <br>
+
+	The configuration of the snake is driven by the negative energy gradients which are referred as the forces. Using of Gradient Vector Flow method to determine the energy forces reduces the probability of falling into local minima. Active contour model for the segmentation of blood vessels doesn’t include internal energy as the vessel shape is highly torturous. So far three external energies affecting the snake were considered which are  <br>
+	<br>
+	<ol>
+	<li> Edge distance energy: Edge distance energy helps the snake advance of nodes close to vessel boundaries but it also stops them when they reach a minimum, that is, when they reach an edge point</li>
+	<li> Crease distance energy: It corresponds to the creases distance energy that drives the snake along the arteriovenous structure and blocks it if a maximum distance threshold is reached. and</li>
+	<li> Inflation force: It is a force without energy term and is the strongest expansion force which expands the snake subject to certain constraints. It is calculated once the snake has been initialized.</li> <ol></p>
+</div>
+	
+	
+	
+  
+  <h2>Results</h2>
+  <div align="justify">
+  <p>We have implemented the snakes on few samples from the <a href="http://www.isi.uu.nl/Research/Databases/DRIVE/">DRIVE </a> database available. We were able to extract the creases and initialize the snakes onto the blood vessels for segmenting them and were successful.</p>
+  <p>Segmented vessels for a sample image in the drive database is shown below and results for other images in the drive database can be found in the <a href="#">Report </a>. 
+  </p>
+  </div>
+  
+  <figure>    
+	<div align="center"><img src="image/projects/btp/1.png" alt="Fundus Image" border="1" width="260" height="260"></div>
+	<figcaption>
+	  <div align="center" class="arialFont"><small>Fig.2 - Image Details: 02_Test, Drive Database. </small></div>
+	</figcaption>
+	</figure>
+	<div align="justify">
+  <p> The image was smoothed using Gaussian filter to remove noise and edge energy of the input image is determined using image gradient vector.  </p>
+  </div>
+  <figure> 
+	<div align="center"><img src="image/projects/btp/2.png" alt="Creases" border="1" width="260" height="260"></div>
+	<figcaption>
+	  <div align="center" class="arialFont"><small>Fig.3 - Creases. </small></div>
+	</figcaption>
+	</figure>
+	<div align="justify">
+  <p>Creases were extracted from the input image using image pre-processing techniques like morphology and edge linking and the Crease Energy of the image was computed  </p>
+  </div>
+  <figure> 
+	<div align="center"><img src="image/projects/btp/3.png" alt="Blood vessels" border="1" width="260" height="260"></div>
+	<figcaption>
+	  <div align="center" class="arialFont"><small>Fig.4 - Active contour output. </small></div>
+	</figcaption>
+	</figure>
+    <div align="justify">
+  <p>After crease extraction, manual initialisation of the snake was done nearer to a blood vessel which is followed by resampling of the Snake and 
+  determination of energy forces at the corresponding resampled points. Then inflation force for the current configuration of the snake was determined. 
+  After determination of all the forces influencing the snake, configuration of the snake was performed using the update equation given by gradient descent 
+  method. The termination of the snake is done once all the points on the snake have zero forces acting on them. 
+  </p>
+  </div>   
+	  
+	  <code><a href="#WVehicle" class="style6">To the Top</a></code>
+  <!--<hr class="soften">-->
+  <!-- /.marketing -->
+          
+          <!-- Footer
+      ================================================== -->
+
+</div>
+<br/>
+    <footer class="footer">
+        
+      <p align="justify" class="footerStyle">Copyrights reserved © UdayaBhaskar</p>
+  </footer>
+  </div>
+    <!-- /container -->
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="docs/jquery-1.8.0.js"></script>
+<script type="text/javascript" src="docs/bootstrap-tooltip.js"></script>
+<script type="text/javascript" src="docs/bootstrap-alert.js"></script>
+<script type="text/javascript" src="docs/bootstrap-button.js"></script>
+<script type="text/javascript" src="docs/bootstrap-carousel.js"></script>
+<script type="text/javascript" src="docs/bootstrap-collapse.js"></script>
+<script type="text/javascript" src="docs/bootstrap-dropdown.js"></script>
+<script type="text/javascript" src="docs/bootstrap-modal.js"></script>
+<script type="text/javascript" src="docs/bootstrap-popover.js"></script>
+<script type="text/javascript" src="docs/bootstrap-scrollspy.js"></script>
+<script type="text/javascript" src="docs/bootstrap-tab.js"></script>
+<script type="text/javascript" src="docs/bootstrap-transition.js"></script>
+<script type="text/javascript" src="docs/bootstrap-typeahead.js"></script>
+<script type="text/javascript" src="docs/jquery.validate.js"></script>
+<script type="text/javascript" src="docs/jquery.validate.unobtrusive.js"></script>
+<script type="text/javascript" src="docs/jquery.unobtrusive-ajax.js"></script>
+ 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36060270-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body></html>

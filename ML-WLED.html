@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Projects | Quality Action Recognition </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Academic website of Uday">
+    <meta name="author" content="Udaya Bhaskar Kothapalli">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body data-spy="scroll" data-target=".subnav" data-offset="50" screen_capture_injected="true" background="images/bg.png">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-default">
+
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><b>Udaya Bhaskar Kothapalli</b></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html"><b>Home</b></a></li>
+
+
+                <li><a href="Resume.html"><b>Resume</b></a></li>
+                <li><a href="MyProjects.html"><b>Projects</b></a></li>
+                <li><a href="Publications.html"><b>Publications</b></a></li>
+                <li><a href="AboutMe.html"><b>AboutMe</b></a></li>
+
+                <!--<li><a href="#"><i class="fa fa-github-square fa-3x"></i></a></li> -->
+            </ul>
+
+
+
+        </div>
+    </div>
+</nav>
+<div class="container">
+
+    <div class="jumbotron">
+        <p id="WVehicle"> </p>
+
+        <div>
+            <h1>Quality Activity Recognition </h1>
+        </div>
+
+        <ul class="breadcrumb">
+            <li>
+                <a href="index.html" class="style8">Home</a> <span class="divider">/</span>	  </li>
+            <li>
+                <a href="MyProjects.html" class="style8">MyProjects</a> <span class="divider">/</span>	  </li>
+            <li class="active style8">Quality Activity Recognition of Weight Lifting Exercise</li>
+        </ul>
+        <div class="row">
+
+
+            <div class="col-md-9 col-sm-9">
+                <div class="padadjust"><h2>Motivation</h2>
+                    Human Activity Recognition - HAR - has emerged as a key research area in the last years and is gaining increasing
+                    attention by the pervasive computing research community (see picture below, that illustrates the increasing number of publications in HAR
+                    with wearable accelerometers), especially for the development of context-aware systems. There are many potential applications for HAR,
+                    like: elderly monitoring, life log systems for monitoring energy expenditure and for supporting weight-loss programs, and digital assistants
+                    for weight lifting exercises.
+
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <a class="thumbnail">
+                    Coursera Project-2015<br>
+                    Coursera (Johns Hopkins University) <br>
+                    Course: Practical Machine Learning <br>
+
+                </a>
+            </div>
+
+            <br/>
+        </div>
+        <div class="row">
+
+
+            <div class="padadjust">
+                <div class="col-sm-12 col-md-12">
+                    <h2>Weight Lifting Exercises Dataset</h2>
+
+                    Six young health participants were asked to perform one set of 10 repetitions of the Unilateral Dumbbell
+                    Biceps Curl in five different fashions: exactly according to the specification (Class A), throwing the elbows
+                    to the front (Class B), lifting the dumbbell only halfway (Class C), lowering the dumbbell only halfway (Class D)
+                    and throwing the hips to the front (Class E).
+                    <br><br>
+                    Class A corresponds to the specified execution of the exercise, while the other 4 classes correspond to common mistakes.
+                    Participants were supervised by an experienced weight lifter to make sure the execution complied to the manner they were
+                    supposed to simulate. The exercises were performed by six male participants aged between 20-28 years, with little weight lifting experience.
+                    Read more at: <a href="http://groupware.les.inf.puc-rio.br/har"> Weight Lifting Exerciese Dataset</a>
+
+</div>
+
+                    <div class="col-sm-6 col-md-6">
+                        <div class="thumbnail">
+                            <img align="center" src="images/projects/har/HAR-PML.png" alt="Sensors placement" border="1" width="200" height="300" >
+                            <div class="caption">
+
+                                <h4 align="center">Fig.1 - Sensors placement</h4>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+
+                </div>
+
+
+
+
+
+            <div class="padadjust">
+
+
+
+
+
+
+                <div class="col-sm-12 col-md-12">
+                    <h2>Methodology</h2>
+                    <div class="padadjust">
+                        My approach can be described in the following steps.
+                        <ol>
+                            <li>Data Preprocessing.  </li>
+                            <li> Data Slicing. </li>
+                            <li> Machine Learning Model selection.  </li>
+                            <li> Running the selected Model on the entire Dataset.  </li>
+
+                        </ol>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm-12 col-md-12">
+                    <h2>Conclusion</h2>
+
+                        Three models have been developed using GBM, Decision Trees and Random Forests. The models were developed using Caret package in R. The detailed steps
+                        and programs can be found in the <a href="https://github.com/uday2531/PMLCoursera/tree/master/Final%20project">Github repository</a>.
+
+
+                        <br>
+                        <code><a href="#WVehicle" class="style6">To the Top</a></code>
+
+
+
+                </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--<hr class="soften">-->
+            <!-- /.marketing -->
+
+            <!-- Footer
+        ================================================== -->
+
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+
+
+        <p class="pull-left"> Copyright © <a href="index.html">Udaya Bhaskar</a></p><p class="pull-right"><a style="color:inherit;" href="https://github.com/ubkothapalli" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
+        <!--<div class="pull-right">
+            <ul class="nav nav-pills payments">
+              <li><a href="#"><i class="fa fa-github-square fa-2x"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+
+
+            </ul>
+        </div>
+        -->
+
+
+    </div>
+
+
+</footer>
+
+
+</body></html>

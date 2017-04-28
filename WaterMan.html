@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Projects | Water Management system </title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="Academic website of Uday">
+	<meta name="author" content="Udaya Bhaskar Kothapalli">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+	<!-- Custom styles for this template -->
+	<link href="css/sticky-footer-navbar.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="css/custom.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body data-spy="scroll" data-target=".subnav" data-offset="50" screen_capture_injected="true" background="images/bg.png">
+
+<!-- Navigation Bar -->
+<<nav class="navbar navbar-default">
+
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html"><b>Udaya Bhaskar Kothapalli</b></a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html"><b>Home</b></a></li>
+
+
+				<li><a href="Resume.html"><b>Resume</b></a></li>
+				<li><a href="MyProjects.html"><b>Projects</b></a></li>
+				<li><a href="Publications.html"><b>Publications</b></a></li>
+				<li><a href="AboutMe.html"><b>AboutMe</b></a></li>
+
+				<!--<li><a href="#"><i class="fa fa-github-square fa-3x"></i></a></li> -->
+			</ul>
+
+
+
+		</div>
+	</div>
+</nav>
+<div class="container">
+
+	<div class="jumbotron">
+		<p id="WVehicle"> </p>
+
+		<div>
+			<h1>Water Management System </h1>
+		</div>
+
+		<ul class="breadcrumb">
+			<li>
+				<a href="index.html" class="style8">Home</a> <span class="divider">/</span>	  </li>
+			<li>
+				<a href="MyProjects.html" class="style8">MyProjects</a> <span class="divider">/</span>	  </li>
+			<li class="active style8">Smart Water Management System</li>
+		</ul>
+		<div class="row">
+
+
+			<div class="col-md-9 col-sm-9">
+				<div class="padadjust"><h2>Overview</h2>
+					The goal is to create an iterative cycle where the state of a water reservoir 
+					is acquired through various sensors; this information can subsequently 
+					be employed for the purpose of decision and control; and an action 
+					(or a set of actions) is then applied to the water level in the reservoir through actuation. 
+					These actions alter the state of the physical entities, guiding the system towards 
+					a desired goal. This feedback loop continues in psuedo real-time 
+					as the embedded system strives to optimally manage available resources.
+					<br><br>
+					Primarily the microcontrollers interact with four major components: 
+					an infrared (IR) distance sensor, a pump, a flow sensor, and a valve. 
+					In addition, data will have to be transferred psuedo real-time from 
+					the microcontroller to a Linux box using a serial connection and Bluetooth. The Qt 
+					interface visualizes the sensor data and also stores it in a SQLite database. 
+					The feedback controls the water level using a PID controller. 
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<a class="thumbnail">
+					Fall-2015<br>
+					Data aquisition and emebedded systems, Texas A&amp;M University, USA <br>
+					Supervisor: Dr. Jean-Francois Chamberland <br>
+
+				</a>
+			</div>
+	
+			<br/>
+		</div>
+		<div class="row">
+
+
+			<div class="padadjust">
+			<div class="col-sm-12 col-md-12">
+				<h2>System Setup</h2>
+
+					<!--<h3>Surface-Based Parking Lot Structure</h3> -->
+
+					The purpose of the project is to build a water management system 
+					for monitoring and controlling the water level in a reservoir remotely. 
+					This water management system consists of a working replica of water reservoir 
+					system, a PCB that integrates various sensors and communication modules to a 
+					teensy development board and a Qt interface for visualizing and setting 
+					the state of physical entities like the water level and pump rate in psuedo real-time. 
+					Building this system involves the following tasks:
+			<ol>
+				
+				<li>	A PCB design for integrating IR sensor, Pump, Flow rate sensor and bluetooth commiunication module
+				to a teensy development board.	</li>
+				<li>	A PID control in teensy for managing a consistent water level.     </li>
+				<li>	Networking and Qt interface for visualizing and setting the water level and pump rate on the remote Linux box. </li>
+			</ol>		
+					<br><br>
+					<h3>PCB design</h3>
+					<br>
+					The following block diagram of the PCB was designed in KiCad
+					<div class="col-sm-12 col-md-12">
+							<div class="thumbnail">
+								<img src="images/projects/daes/BlockDiagramPCB.png" alt="Block diagram of the PCB" >
+								<div class="caption">
+
+									<h6 align="center">Fig.1 - The blockdiagram shows the requirements of the 
+									project. </h6>
+
+								</div>
+							</div>
+						</div>
+					<br>
+					There are three steps to design a PCB board:
+
+			<ol>		
+			<li>Eeschema design</li>
+			<li>Footprint edit</li>
+			<li>Layout design</li>
+			</ol>	
+
+					<ul>
+						<li>
+								<h4> Eeschema design </h4>
+								 The schematic was organized graphically into modular components using net names 
+								 with local labels to easily see the function of each component, and how it connects
+								 to the Teensy. It was designed to have enough connections added for up to two flow
+								 rate sensors and two pumps. Two status LEDs were
+								 added to the board to indicate power good and a low water
+								 level warning. The power good LED turns on from a digital write on the Teensy, which means 
+								 that the whole power chain is functioning correctly. The LED gets 3.3V from a Teensy DIO,
+								 indicating that its internal regulator is functioning because the Teensy is being powered 
+								 from the 5V regulator, and the regulator takes its input from the 12V power in.
+							<br>	
+						<div class="col-sm-12 col-md-12">
+							<div class="thumbnail">
+								<img src="images/projects/daes/Schematic.png" alt="Eeschema design" >
+								<div class="caption">
+
+									<h6 align="center">Fig.2 - The Eeschema design shows the schematic of the 
+									of the PCB components connections. </h6>
+
+								</div>
+							</div>
+						</div>
+								
+						</li>
+								
+<br><br>
+
+							<li>
+							<h4> Footprint edit </h4>
+								The Teensy and screw terminal blocks were both found in public 
+								 libraries online <a href="https://github.com/LuisDiazUgena/Teensy-3.1">here</a> and <a href="http://smisioto.no-ip.org/elettronica/kicad/kicad-en.htm">here</a> respectively. 
+								 All other devices and footprints were
+								 found in the default libraries.
+							</li>
+								
+							<li>
+								 <h4>Layout design </h4>
+								 Layout was done with an attempt to minimize board space. The 17 port screw 
+								 terminal block was by far the longest component, making the board naturally 
+								 oriented along it. The power traces were 40 mils, and all other traces were 
+								 20 mils, everything has a 20 mil clearance. The board was also laid out with 
+								 an attempt to minimize the length of the +12V and +5V power traces, but the +5V 
+								 trace stretched the length of the board to accomodate the Teensy and Bluetooth 
+								 module. The status LEDs were set far from other components on one side of the board 
+								 to make them easy to locate. 3 mounting holes were placed in order to accomadate 
+								 standoffs from the 3D printed reservoir cap. A ground pour was made on both layers 
+								 with proper thermal relief from pads for soldering. 
+						<br>
+						<div class="col-sm-12 col-md-12">
+							<div class="thumbnail">
+								<img src="images/projects/daes/layout.png" alt="Layout design" >
+								<div class="caption">
+
+									<h6 align="center">Fig.3 - The layout of the PCB. </h6>
+
+								</div>
+							</div>
+						</div>
+								<br> 
+								 Gerber and drill files were 
+								 generated and sent to the Engineering Innovation Center(TAMU) for fabrication. Once fabricated, the components were 
+								 soldered on, and the board was plugged in and tested for functionality.
+						
+<br>
+						<div class="col-sm-12 col-md-12">
+							<div class="thumbnail">
+								<img src="images/projects/daes/pcb_top.jpg" alt="Top view of PCB" >
+								<div class="caption">
+
+									<h6 align="center">Fig.4 - The topview of the PCB with soldered components. </h6>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-12">
+							<div class="thumbnail">
+								<img src="images/projects/daes/pcb_bott.jpg" alt="Bottomview of PCB" >
+								<div class="caption">
+
+									<h6 align="center">Fig.5 - The bottomview of the PCB with soldered components. </h6>
+
+								</div>
+							</div>
+						</div>
+<br>
+
+						
+						</li>
+					</ul>
+
+			</div>
+
+			
+			
+			
+			
+			
+			
+			
+			
+				
+					<h3>PID controller</h3>
+					<br>
+					Project consists of programming the controls for managing desired 
+					water levels. PID library was used to program the Teensy board through
+					Arduino IDE. 
+					<div class="col-sm-12 col-md-12">
+							<div class="thumbnail">
+								<img src="images/projects/daes/pid.png" alt="Block diagram of the PID controller" >
+								<div class="caption">
+
+									<h6 align="center">Fig.6 - The blockdiagram of a PID controller. </h6>
+
+								</div>
+							</div>
+						</div>
+					<br>
+					
+					A PID controller calculates an 'error' value as the difference 
+					between a measured Input [IR sensor reading] and a desired setpoint 
+					[desired water level]. The controller attempts to minimize the error by 
+					adjusting an Output [PWM voltage to pump]. This adjusting of the output to 
+					drive the input towards a setpoint is achieved by 3 tuning parameters. They are:
+					
+					<ul> 
+					<li> Proportionate gain - Kp </li>
+					<li> Integral gain - Ki </li>
+					<li> Differential gain - Kd </li>
+					</ul>
+					
+					The rate at which the PID drives the input towards the setpoint depends 
+					upon the tuning parameters defined. Each application has its own optimal 
+					parameter values. For this project the PID gives optimal solution when the 
+					Kp, Ki and Kd are set to 2, 3 and 1 respectively. In this project, 
+					the IR reading scale is used for both the input and setpoint 
+					and the output of the PID is the PWM value to control the motor speed.
+					
+					The three gain values were tuned using Ziegler–Nichols method and the updated gain values are:
+					<ul> 
+					<li> Kp = 20 </li>
+					<li> Ki = 4 </li>
+					<li> Kd = 2 </li>
+					</ul>
+					
+			
+
+				</div>
+
+			
+
+				<div class="col-sm-12 col-md-12">
+
+					<h3>Interfaces and Networking</h3>
+					
+					<ul>
+					   <li> Programming IDE: Qt (NUC software) and Arduino IDE (Teensy)</li>
+						<li>Bluetooth Module: HC-06</li>
+						<li>Bluetooth connection protocol between HC-06 and NUC: RFCOMM</li>
+						<li>Client-Server communication among NUCs: TCP/IP</li>
+					</ul>	
+						
+					<h4> Client </h4>
+					
+					The Bluetooth module (HC-06) is configured as a serial i/o device with the Teensy.
+					Any communication between Teensy and HC-06 is just a Serial.
+					Read/Write. The Teensy is programmed to listen to "get_data" 
+					from the bluetooth receive. Once this string is detected, the 
+					current IRRange, PumpRate, FlowRate and SolenoidState data are 
+					sent serially to HC-06, which in-turn, transmits it.
+
+                    The NUC runs a Qt program that connects to HC-06 reads the data and 
+					plots the values in one thread and another thread connects to a central server 
+					and sends these values in JSON format.
+					
+								<blockquote> 
+									{
+									"ID":"TeamName",
+									"IRRange":"xxx",
+									"PumpRate":"xxx",
+									"FlowRate":"xxx",
+									
+									"Timestamp":"Unix epoch",
+									"CurrentIP":"xx.xxx.xxx.xx"
+									}
+								</blockquote>
+								
+					<br>
+					"get_data" command is sent via Bluetooth to HC-06 and the application
+					listens for IRRange, PumpRate, FlowRate data (in that order).
+					This data is parsed and stored locally in JSON format. Timestamp of this message
+					is recorded and is added to the JSON file. 
+					
+					<br>
+					We read the locally created JSON file and upon server request, 
+					sends these values as a JSON file to the requesting server. 
+						
+					<h4> Server </h4>
+					
+					The Server is responsible for the multiple client integration. 
+					Each Client connects to the server individually and establishes 
+					a secure TCP connection.
+
+					<br>
+
+					Once the handshaking is complete with each client, 
+					the Server polls each NUC-Client in time-based slots. 
+					The Clients accordingly communicate their current parameters (IRRange, PumpRate and FlowRate). 
+					
+
+					<br>
+
+					The current values of the parameters are updated in the database 
+					as well as periodically plotted vs time using qCustomPlot.
+					
+					The NUC server and client can be found <a href="#"> here </a>.
+					
+					
+					
+					
+					<h3>Data visualization</h3>
+						The Visualization of this project is observed on the central client using 
+						a QCustomPlot GUI. The four sensor data received from the NUC servers are
+						plotted in four different plots, with a unique graph for each team. All the data
+						is plotted against the time. The central client can control the pump speed from 
+						the GUI by sending the voltage value to the corresponding NUC server.
+						
+				<div class="col-sm-12 col-md-12">
+					<div class="thumbnail">
+						<img src="images/projects/daes/simulator.png" alt="QT plot of the sensor data" >
+						<div class="caption">
+
+							<h5 align="center">Fig.7 QCustomPlot of sensor data are plotted against time.</h5>
+
+						</div>
+
+					</div>
+				</div>		
+				
+				 <div class="col-sm-12 col-md-12">
+					<div class="thumbnail">
+						<img src="images/projects/daes/controller.png" alt="Simple Waterlevel controller user interface" >
+						<div class="caption">
+
+							<h5 align="center">Fig.8 A simple waterlevel controller with minimal plotting and enhanced control interface.</h5>
+
+						</div>
+
+					</div>
+				</div>	
+						
+						
+				</div>
+
+
+
+				
+
+
+
+			<div class="col-sm-12 col-md-12">
+				<h2>Project Setup</h2>
+				
+			</div>
+
+			<div class="padadjust">
+				<div class="col-sm-12 col-md-12">
+					<div class="thumbnail">
+						<img src="images/projects/daes/setup_rig.jpg" alt="Project setup "">
+						<div class="caption">
+
+
+
+						</div>
+
+					</div>
+				</div>
+
+
+
+				
+
+
+
+				</div>
+
+
+
+
+
+
+
+
+
+
+			</div>
+
+
+
+
+
+
+			<!--<hr class="soften">-->
+			<!-- /.marketing -->
+
+			<!-- Footer
+        ================================================== -->
+
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+
+
+		<p class="pull-left"> Copyright © <a href="index.html">Udaya Bhaskar</a></p><p class="pull-right"><a style="color:inherit;" href="https://github.com/ubkothapalli" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
+		<!--<div class="pull-right">
+            <ul class="nav nav-pills payments">
+              <li><a href="#"><i class="fa fa-github-square fa-2x"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+
+
+            </ul>
+        </div>
+        -->
+
+
+	</div>
+
+
+</footer>
+
+
+</body></html>
