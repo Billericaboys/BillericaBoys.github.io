@@ -11,9 +11,9 @@ image:
 Howdy!	
     
     
-I'm Pranay Kumar, a graduate student in Electrical and Computer Engineering department at Texas A&M University, College Station. I received my B.Tech Degree in Electrical Engineering from Indian Institute of Technology - Bhubaneswar, India.	
+I'm Pranay Kumar, a graduate student from Computer Engineering major at Texas A&M University, College Station. I received my B.Tech Degree in Electrical Engineering from Indian Institute of Technology - Bhubaneswar, India.	
    
    
-My research interests are in i) Computer systems and software with emphasis on real time embedded systems and ii) Artificial Intelligence for Robotics
+My background lies in diverse fields: 1. Machine learning, 2. Robotics (Computer Vision and SLAM) and 3. Computer architecture & Digital logic design.
 
 
