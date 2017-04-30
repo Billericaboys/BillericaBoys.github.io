@@ -63,8 +63,9 @@
 
         <div class="subnav">
             <ul class="nav nav-pills style5">
-                <li><a href="#Paper1">Superpixel analysis of OCT </a></li>
-                <li><a href="#Paper2">Hard exudates extraction </a></li>
+                <li><a href="#Paper1">Distributed Wireless Monitoring </a></li>
+				<li><a href="#Paper2">Machine Learning Techniques for Occupancy Estimation  </a></li>
+                <li><a href="#Paper3">Hard exudates extraction </a></li>
 
             </ul>
         </div>
@@ -83,36 +84,35 @@
 	    <tbody>
 	      <tr>
 	        <td>Title</td>
-            <td>Five-dimensional analysis of multi-contrast Jones matrix tomography of posterior eye</td>
+            <td>Occupancy Estimation with Wireless Monitoring Devices and Application-Specific Antennas</td>
           </tr>
 	      <tr>
 	        <td>Authors</td>
-            <td><a href="index.html">Udaya Bhaskar</a>, <a href=""http://www.researchgate.net/profile/Yoshiaki_Yasuno"" target="_blank">Yoshiaki Yasuno</a> Young-Joo Hong and Masahiro Miura</td>
+            <td><a href="index.html">P. Eedara</a>, H. Li, N. Janakiraman, N. R. A. Tungala, <a href="http://www.ece.tamu.edu/~chmbrlnd/index.html">J.F. Chamberland</a>, <a href="http://www.ghhuff.com/">G. H. Huff</a></td>
           </tr>
 	      <tr>
 	        <td>Abstract</td>
-            <td><div align="justify"> Pixel clustering algorithm tailored to multi-contrast Jones matrix based optical coherence tomography (MC-JMT) is demonstrated. This algorithm clusters multiple pixels of MC-JMT in a five-dimensional (5-D) feature space which comprises dimensions of lateral space, axial space, logarithmic scattering OCT intensity, squared power of Doppler shift and degree of polarization uniformity. This 5-D clustering provides clusters of pixels, so called as superpixels. The superpixels are utilized as local regions for pixels averaging. The averaging decreases the noise in the measurement as preserving structural details of the sample. A simple decision-tree algorithm is applied to classified superpixels into some tissue types. This classification process successfully segments tissues of a human posterior eye.</div></td>
+            <td><div align="justify"> The rapid proliferation of wireless devices offers new means to infer current conditions surrounding mobile users, their locations, and their actions. This is especially true for industrial, scientific, and medical (ISM) radio bands where communication protocols are often open and information about neighboring devices abounds. This paper examines efficient occupancy estimation based on Wi-Fi metadata, with an emphasis on algorithms attuned to directional antenna technology. Certain Wi-Fi interfaces can be switched into monitoring mode, an operating state where all local packets are observed and recorded. Using a network of such monitoring sensors, it is then possible to estimate the number of active devices within a specific area. The envisioned estimators take as input received signal strength indicators and media access control addresses. By using directional monitoring antennas, one can gain additional and/or more discriminating information about current conditions, thereby yielding enhanced occupancy estimates. This paper introduces novel estimation algorithms and characterizes the performance gains associated with RF-aware sensing devices. Experimental results based on a prototype implementation of this distributed monitoring system provide further supporting evidence for the proposed techniques.</div></td>
           </tr>
 		  <tr>
 	        <td>Keywords</td>
             <td><div align="justify">
-            Optical coherence tomography; ophthalmology; image processing; clustering; superpixel; polarization
-imaging; Doppler imaging; macular disease.</td> 
+             statistical information processing, maximum likelihood, distributed monitoring system,  Wi-Fi metadata,  Wi-Fi interfaces,  access protocols, received signal strength indicators, application-specific antennas, occupancy estimation, wireless monitoring devices.</td> 
           </tr>
 		  <tr>
 	        <td>Links</td>
             <td><table>
               <tr>
                 <td><ul class="thumbnails span3 tile">
-                <a href="http://spie.org/Publications/Proceedings/Volume/8930" target="_blank" >
+                <a  href="http://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=7845749&punumber=78" target="_blank" >
                     <img src="images/Conf.png" alt="Conference Website" width="60" height="60" border="0">
-                    <h6>Conference
+                    <h6>Journal
                       </h6>
               </a>
             </ul></td>
                 <td><ul class="thumbnails span3 tile">
-                <a href="http://spie.org/Publications/Proceedings/Paper/10.1117/12.2036587" target="_blank" >
-                    <img src="images/spie.jpg" width="60" height="60">
+                <a href="http://ieeexplore.ieee.org/abstract/document/7809158" target="_blank" >
+                    <img src="images/IEEE.png" width="60" height="60">
                     <h6>Document
                       </h6>
               </a>
@@ -127,8 +127,97 @@ imaging; Doppler imaging; macular disease.</td>
     </div>
 	
 	
+	
+	
 	<section id="Paper2">
     <h2>Paper II <small> Main Author </small></h2>
+	
+	<div align="justify">
+	  <table class="table table-bordered table-striped">
+	    <tbody>
+	      <tr>
+	        <td>Title</td>
+            <td>Enhancing Machine Learning Techniques for Occupancy Estimation and Socio-Physical Graph Reconstruction Using Reconfigurable Antennas</td>
+          </tr>
+	      <tr>
+	        <td>Authors</td>
+            <td><a href="index.html">P. Eedara</a>, H. Li, N. Janakiraman, N. R. A. Tungala, T. Taghavi, <a href="http://www.ece.tamu.edu/~chmbrlnd/index.html">J.F. Chamberland</a>, <a href="http://www.ghhuff.com/">G. H. Huff</a> </td>
+          </tr>
+	      <tr>
+	        <td>Abstract</td>
+            <td><div align="justify">  
+			This research project aims to study the interplay between antenna design and graph inference in the context of Wi-Fi monitoring.
+			The premise for this work is that most people carry smartphones with enabled Wi-Fi interfaces.
+			Due to the structure of Wi-Fi protocols, it is possible to monitor Wi-Fi packets travelling between a wireless device and an access point in an inconspicuous fashion.
+			This third-party monitoring of packets is often referred to as passive data collection. 
+			Metadata leaked through this process includes unique and persistent media access control (MAC) address.
+			During the acquisition process, the captured data is augmented with a received signal strength indicator, a geographical location, and a timestamp. 
+			The gathered information, once placed in a database, can be employed in a number of statistical tasks.
+<p></P>
+In this research initiative, we are specifically interested in reconstructing graphs of social interactions taking place in the physical world.
+Our project operates under the assumption that spatiotemporal proximity is a strong indicator of socio-physical relationships.
+That is, devices that are frequently found in close proximity are likely to belong to users who are interacting in the physical world, as opposed to coincidental proximity attributable to strangers randomly crossing paths.
+Yet, the limited information afforded by Wi-Fi metadata and the constraints of signal monitoring in the industrial, scientific, and medical radio bands poses many challenges from an engineering viewpoint.
+The statistical task at hand demands both the careful sampling of areas of interest, as well as tailored inference algorithms.
+
+<p></P>
+The technical goal of this project is twofold.
+First, we seek to better understand how antenna design influences the sampling of active Wi-Fi devices.
+There is a natural tension between the frequency at which devices are detected and the significance of observations. 
+In particular, antennas with broad patterns are likely to pick up signals from nearby devices repeatedly.
+Still, two devices are more likely to be nearby if they are sampled concurrently by a monitoring device with a small footprint.
+Second, we wish to study how antenna footprints affect the performance of machine learning algorithms.
+It is possible to enhance the performance of graph-inference algorithms by incorporating information about antenna footprints into the structure of the data.
+For instance, empirical averages can be weighted in a manner that is inversely proportional to antenna footprint.
+Then, more discriminating events are given more importance, thereby providing a pathway to better performance. 
+This second objective then revolves around studying how machine learning algorithms that integrate information about radiation patterns are affected by the selection of antenna profiles.
+Overall, this work offers a framework to determine to what degree the social relationships between devices can be accuately predicted by analyzing Wi-Fi metadata through passive monitoring with application-specific antennas.
+
+
+
+			</div></td>
+          </tr>
+		  <tr>
+	        <td>Keywords</td>
+            <td><div align="justify">
+            Classifier, Diabetic Retinopathy, Exudates Detection, Functional Link Artificial Neural Network (FLANN), Image Processing, Luminosity Contrast Normalization</td> 
+          </tr>
+		  <tr>
+	        <td>Links</td>
+            <td><table>
+              <tr>
+                <td><ul class="thumbnails span3 tile">
+                <a href=http://www.2017apsursi.org/ target="_blank" >
+                    <img src="images/Conf.png" alt="Conference Website" width="60" height="60" border="0">
+                    <h6>Conference
+                      </h6>
+              </a>
+            </ul></td>
+                <td><ul class="thumbnails span3 tile">
+                <a href="http://www.2017apsursi.org/Papers/ViewPapers.asp?PaperNum=2522" target="_blank" >
+                    <img src="images/IEEE.png" width="60" height="60">
+                    <h6>Document
+                      </h6>
+              </a>
+            </ul></td>
+			
+              </tr>
+            </table></td>
+          </tr>
+        </tbody>
+      </table>
+	  <code><a href="#Papers" class="style6">To the Top</a></code>    
+    </div>
+        </section>
+	
+	
+	
+	
+	
+	
+	
+	<section id="Paper3">
+    <h2>Paper III <small> Main Author </small></h2>
 	
 	
 	
@@ -189,117 +278,7 @@ imaging; Doppler imaging; macular disease.</td>
     </div>
         </section></section></div></div></div></div>
 	
-	<!--
-	<section id="Paper3">
-    <h2>Paper III <small> Main Author </small></h2>
-	
-	<div align="justify">
-	  <table class="table table-bordered table-striped">
-	    <tbody>
-	      <tr>
-	        <td>Title</td>
-            <td>Simulation studies on ZigBee Network for In-Vehicle Wireless Communications</td>
-          </tr>
-	      <tr>
-	        <td>Authors</td>
-            <td>A.V. Durga Ganesh Reddy, <a href="http://www.iitbbs.ac.in/profile.php/barathram/" target="_blank">Dr. Barathram Ramkumar</a></td>
-          </tr>
-	      <tr>
-	        <td>Abstract</td>
-            <td><div align="justify">The increase in the number of sensors and Electronic Control Units (ECU) that are deployed in a vehicle has increased the wiring harness complexity and the cost brought to the automobile industry. Some sensors are installed at very inaccessible locations, such as pressure sensors and wheel speed sensors in car tires, which transmit crucial real time data via cables. Managing the increasing complexity of electronic system has become a key challenge for automobile manufacturers and their suppliers. There arises the need for Wireless networks which can effectively reduce this complexity. Zigbee wireless sensor networks are seen as a good candidate technology to replace the wired network inside an automobile because of its mesh networking capabilities and low power consumption. With its fine capability of solving multi-path fading using Direct Sequence Spread Spectrum (DSSS) technology and interference resilience using Carrier Sense Multiple Access (CSMA), ZigBee wireless technology is considered as a highly promising candidate for intra-vehicular wireless networks. However, the propagation channel inside a vehicle is closed and is effected by the mechanical vibrations caused by the movement of the vehicle. So, modelling of the channel and an adaptive equalizer is necessary to facilitate the reliable communication inside a vehicle. This paper proposes the simulation of physical layer of ZigBee network and the propagation channel inside a vehicle along with an adaptive equalizer at the receiver. Finally this paper gives the details of simulation results and the future scope for research in this area.</div></td>
-          </tr>
-		  <tr>
-	        <td>Keywords</td>
-            <td><div align="justify">Carrier Sense Multiple Access (CSMA); Direct Sequence Spread Spectrum (DSSS); in-vehicle wireless networks; propagation channel; ZigBee</td>
-          </tr>
-		  <tr>
-	        <td>Links</td>
-            <td><table>
-              <tr>
-                <td><ul class="thumbnails">
-                <li class="span3 tile"><a href="http://www.iccci.in/" target="_blank" >
-                    <img src="image/Conf.png" alt="Conference Website" width="60" height="60" border="0">
-                    <h2>Conference
-                      </h2>
-              </a></li>
-            </ul></td>
-                <td><ul class="thumbnails">
-                <li class="span3 tile"><a href="http://sdrv.ms/1dcm9hg" target="_blank" >
-                    <img src="image/adobe.png" width="60" height="60">
-                    <h2>Document
-                      </h2>
-              </a></li>
-            </ul></td>
-			<td><ul class="thumbnails">
-                <li class="span3 tile"><a href="YetToPublish.html" target="_blank" >
-                    <img src="image/IEEE.jpg" width="180" height="180">
-                    <h2></h2>
-              </a></li>
-            </ul></td>
-              </tr>
-            </table></td>
-          </tr>
-        </tbody>
-      </table>
-	  <code><a href="#Papers" class="style6">To the Top</a></code>    
-    </div>
-	
-	
-	<section id="Paper4">
-    <h2>Paper IV <small> Main Author </small></h2>
-	
-	<div align="justify">
-	  <table class="table table-bordered table-striped">
-	    <tbody>
-	      <tr>
-	        <td>Title</td>
-            <td>Wind Power Forecasting Without Using Historical Data</td>
-          </tr>
-	      <tr>
-	        <td>Authors</td>
-            <td>A.V. Durga Ganesh Reddy, L. Tarun Varma</td>
-          </tr>
-	      <tr>
-	        <td>Abstract</td>
-            <td><div align="justify">Wind power, i.e., electrical energy produced making use of the wind resource, is a potential alternative to the conventional energy technologies. But its fluctuating nature requires a uniform approach to manage energy from all sources. An accurate forecast of the wind power for the forthcoming hours is crucial, so that proper planning and scheduling of the conventional generation units can be performed. The main drawback with the existing statistical models is that they require a historical dataset for forecasting. This is a hurdle for newly started farms due to the lack of historical data set. This paper models a self-adaptive Artificial Neural Networks to effectively forecast the wind power without using the historical data. The algorithms will converge after few days of operation. Neural network models such as Multi-Layer Perceptron (MLP), Radial Basis Functions (RBF), and Support Vector Machine (SVM) etc. have better prediction capabilities at the expense of high computational complexity due to the presence of hidden layer. To reduce the computational cost, this paper uses models such as Functional Link Artificial Neural Network (FLANN), Legendre Neural Network (LeNN) and Chebyshev Neural Network (ChNN). Finally these models are compared.</div></td>
-          </tr>
-		  <tr>
-	        <td>Keywords</td>
-            <td><div align="justify">forecasting, multi-layer perceptron, Functional Link ANN, Legendre NN, Chebyshev NN</td>
-          </tr>
-		  <tr>
-	        <td>Links</td>
-            <td><table>
-              <tr>
-                <td><ul class="thumbnails">
-                <li class="span3 tile"><a href="http://www.icaee-vit.in/" target="_blank" >
-                    <img src="image/Conf.png" alt="Conference Website" width="60" height="60" border="0">
-                    <h2>Conference
-                      </h2>
-              </a></li>
-            </ul></td>
-                <td><ul class="thumbnails">
-                <li class="span3 tile"><a href="http://sdrv.ms/1dcmeSm" target="_blank" >
-                    <img src="image/adobe.png" width="60" height="60">
-                    <h2>Document
-                      </h2>
-              </a></li>
-            </ul></td>
-			<td><ul class="thumbnails">
-                <li class="span3 tile"><a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6838543" target="_blank" >
-                    <img src="image/IEEE.jpg" width="180" height="180">
-                    <h2></h2>
-              </a></li>
-            </ul></td>
-              </tr>
-            </table></td>
-          </tr>
-        </tbody>
-      </table>
-	  <code><a href="#Papers" class="style6">To the Top</a></code>    
-    </div>
-	
-	-->
+
 <footer class="footer">
     <div class="container">
 
