@@ -1,0 +1,515 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Digital Design and Computer Architecture</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Academic website of Pranay Kumar">
+    <meta name="author" content="Pranay Kumar Eedara">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+<body data-spy="scroll" data-target=".subnav" data-offset="50" screen_capture_injected="true" background="images/bg.png">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-default">
+
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><b>Pranay Kumar Eedara</b></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html"><b>Home</b></a></li>
+
+
+                <li><a href="Resume.html"><b>Resume</b></a></li>
+                <li><a href="MyProjects.html"><b>Projects</b></a></li>
+                <li><a href="Publications.html"><b>Publications</b></a></li>
+                <li><a href="AboutMe.html"><b>AboutMe</b></a></li>
+
+                <!--<li><a href="#"><i class="fa fa-github-square fa-3x"></i></a></li> -->
+            </ul>
+
+
+
+        </div>
+    </div>
+</nav>
+<!-- Navigation Bar ends -->
+
+
+
+<div class="container">
+    <div class="jumbotron">
+
+        <section id="ddca">
+            <h2 >Digital Design &amp; Computer Architecture</h2>
+        </section>
+
+        <div class="subnav">
+            <ul class="nav nav-pills style5">
+                <li><a href="#Proj1">Cache Replacement Policy </a></li>
+				<li><a href="#Proj2">Pseudo Associative Cache  </a></li>
+                <li><a href="#Proj3">Adaptive Branch Prediction </a></li>
+				<li><a href="#Proj4">RTL design </a></li>
+				<li><a href="#Proj5">System on Chip </a></li>
+				<li><a href="#Proj6">FPGA </a></li>
+				<li><a href="#Proj7">Auto Track Receiver </a></li>
+
+            </ul>
+        </div>
+
+
+
+<div class="row">
+<div class="col-md-12 col-sm-12">
+			
+			
+	<section id="Proj1">
+		<!--<p align="justify">Papers I,II,III are my research findings of the project "Evaluating the technical potential for wireless technology for in-vehicle communications".</p>-->
+	<!--<h2>Paper I <small> Main Author </small></h2> -->
+		<h2><small>Implementation of Cache Replacement Policy using RRIP</small></h2>
+		<div align="justify">
+		  <table class="table table-bordered table-striped">
+			<tbody>
+		<!--  <tr>
+				<td>Title</td>
+				<td>Implementation of Cache Replacement Policy using RRIP</td>
+			  </tr> -->
+			  
+			  <tr>
+				<td>Contributors</td>
+				<td>
+					<a href="index.html"> P. Eedara</a>, 
+					N. R. A. Tungala
+				</td>
+			  </tr>
+			  
+			  <tr>
+				<td>Description</td>
+				<td><div align="justify"> 
+				     Implemented Re-reference interval prediction based cache replacement policy in simple scalar 
+					 with single-core processor and their performance was evaluated using SPEC CPU2006 workloads
+					 </div></td>
+			  </tr>
+			  
+			  <tr>
+				<td>Keywords</td>
+				<td><div align="justify">
+				 Re-reference interval prediction, cache replacement policy, SPEC CPU2006 workloads.
+				 </div></td> 
+			  </tr>
+			  
+			  <tr>
+				<td>Project Links</td>
+				<td><table>
+				  <tr>				
+					<td> <h6>
+						<a href="http://ieeexplore.ieee.org/abstract/document/7809158">
+						Document
+						</a>, <a href="http://people.csail.mit.edu/emer/papers/2010.06.isca.rrip.pdf">
+						 Referred Paper
+						</a>  </h6>
+					</td>
+				  </tr> 
+				</table></td>
+			  </tr>
+			  
+			</tbody>
+		  </table>
+		  <code><a href="#ddca" class="style6">To the Top</a></code>    
+		</div>
+    </section>
+	
+	
+	
+	<section id="Proj2">
+	<!--<h2>Paper II <small> Main Author </small></h2>-->
+		<h2><small>Implementation of Pseudo Associative Cache in SimpleScalar (C)</small></h2>
+		<div align="justify">
+		  <table class="table table-bordered table-striped">
+			<tbody>
+			
+		<!--  <tr>
+				<td>Title</td>
+				<td>Implementation of Pseudo Associative Cache in SimpleScalar (C)</td>
+			  </tr> -->
+			  
+			  <tr>
+				<td>Contributors</td>
+				<td>
+					<a href="index.html"> P. Eedara</a>, 
+					N. R. A. Tungala
+				</td>
+			  </tr>
+			  
+			  <tr>
+				<td>Description</td>
+				<td><div align="justify">  
+				Pseudo or column associative cache aims to decrease the conflict
+				misses of direct mapped cache while leveraging its access time.
+				<p></P>
+				Implemented it in SimpleScalar and compared the miss rate to
+				Directly mapped L1 cache using Spec2000 benchmark.
+				</div></td>
+			  </tr>
+			  
+			  
+			  <tr>
+				<td>Keywords</td>
+				<td><div align="justify">
+				 L1 cache, direct mapped cache, conflict misses, SimpleScalar, Spec2000 benchmark.
+				 </div> </td> 
+			  </tr>
+			  
+			  
+			  <tr>
+				<td>Project Links</td>
+				<td><table>
+				  <tr>
+					<td> <h6>
+						<a href="http://ieeexplore.ieee.org/abstract/document/7809158">
+						Document
+						</a>, <a href="http://people.csail.mit.edu/emer/papers/2010.06.isca.rrip.pdf">
+						 Referred Paper
+						</a>  </h6>
+					</td>
+				  </tr> 
+				</table></td>
+			  </tr>
+			  
+			  
+			</tbody>
+		  </table>
+		  <code><a href="#ddca" class="style6">To the Top</a></code>    
+		</div>
+    </section>
+	
+	
+	<section id="Proj3">
+		<!--    
+		<h2>Paper III <small> Main Author </small></h2>-->
+		<h2><small>Alternate Implementation of Two-level Adaptive Branch Prediction</small></h2>
+		<div align="justify">
+		  <table class="table table-bordered table-striped">
+			<tbody>
+		<!--  <tr>
+				<td>Title</td>
+				<td>Alternate Implementation of Two-level Adaptive Branch Prediction</td>
+			  </tr> -->
+			  
+			  <tr>
+				<td>Contributors</td>
+				<td>
+					<a href="index.html"> P. Eedara</a>, 
+					N. R. A. Tungala
+				</td>
+			  </tr>
+			  
+			  <tr>
+				<td>Abstract</td>
+				<td><div align="justify"> 
+				     Implemented an alternate two-level adaptive branch prediction in Simplescalar and 
+					 compared the performance of two different state diagrams using Spec2000 benchmark.
+					 </div></td>
+			  </tr>
+			  
+			  <tr>
+				<td>Description</td>
+				<td><div align="justify">
+					 branch prediction, Simplescalar, Spec2000 benchmark.
+				 </div></td> 
+			  </tr>
+			  
+			  <tr>
+				<td>Project Links</td>
+				<td><table>
+				  <tr>
+					<td> <h6>
+						<a href="http://ieeexplore.ieee.org/abstract/document/7809158">
+						Document
+						</a>, <a href="http://people.csail.mit.edu/emer/papers/2010.06.isca.rrip.pdf">
+						 Referred Paper
+						</a>  </h6>
+					</td>
+				  </tr> 
+				</table></td>
+			  </tr>
+			  
+			</tbody>
+		  </table>
+		  <code><a href="#ddca" class="style6">To the Top</a></code>    
+		</div>
+    </section>
+	
+	
+	<section id="Proj4">
+		<!--    
+		<h2>Paper III <small> Main Author </small></h2>-->
+		<h2><small>Hardware Modeling and RTL design of an image processor in SystemC and Verilog</small></h2>
+		<div align="justify">
+		  <table class="table table-bordered table-striped">
+			<tbody>
+		<!--  <tr>
+				<td>Title</td>
+				<td>Hardware Modeling and RTL design of an image processor in SystemC and Verilog</td>
+			  </tr> -->
+			  
+			  <tr>
+				<td>Contributors</td>
+				<td>
+					<a href="index.html"> P. Eedara</a>, 
+					N. R. A. Tungala
+				</td>
+			  </tr>
+			  
+			  <tr>
+				<td>Description</td>
+				<td><div align="justify"> 
+				     Designed Canny edge detector, SRAM, UART along with system bus in verilog and
+					 synthesized using design analyser. The system was verified with functional and
+					 gate simulation using VCS.
+					 </div></td>
+			  </tr>
+			  
+			  <tr>
+				<td>Keywords</td>
+				<td><div align="justify">
+					 Canny edge detector, SRAM, UART, functional & gate simulation, verilog, VCS
+				 </div></td> 
+			  </tr>
+			  
+			  <tr>
+				<td>Project Links</td>
+				<td><table>
+				  <tr>
+					<td> <h6>
+						<a href="http://ieeexplore.ieee.org/abstract/document/7809158">
+						Document
+						</a>, <a href="http://people.csail.mit.edu/emer/papers/2010.06.isca.rrip.pdf">
+						 Referred Paper
+						</a>  </h6>
+					</td>
+				  </tr> 
+				</table></td>
+			  </tr>
+			  
+			</tbody>
+		  </table>
+		  <code><a href="#ddca" class="style6">To the Top</a></code>    
+		</div>
+    </section>
+	
+	
+	<section id="Proj5">
+		<!--    
+		<h2>Paper III <small> Main Author </small></h2> -->
+		<h2><small>A Bio-Inspired Security Framework for System on Chip</small></h2>
+		<div align="justify">
+		  <table class="table table-bordered table-striped">
+			<tbody>
+		<!--  <tr>
+				<td>Title</td>
+				<td>A Bio-Inspired Security Framework for System on Chip </td>
+			  </tr> -->
+			  
+			  <tr>
+				<td>Contributors</td>
+				<td>
+					<a href="index.html"> P. Eedara</a>, 
+					N. R. A. Tungala
+				</td>
+			  </tr>
+			  
+			  <tr>
+				<td>Description</td>
+				<td><div align="justify"> 
+				     Implemented a framework for handling security at chip level during potential system 
+					 level attack using Carbon Virtual Prototyping Environment. A hardware security core 
+					 is introduced on-chip to manage SoC security challenges in a 4x4 Mesh NoC structure.
+					 </div></td>
+			  </tr>
+			  
+			  <tr>
+				<td>Keywords</td>
+				<td><div align="justify">
+					 SoC, NoC, RTL design, Carbon Virtual Prototyping Environment.
+				 </div></td> 
+			  </tr>
+			  
+			  <tr>
+				<td>Project Links</td>
+				<td><table>
+				  <tr>
+					<td> <h6>
+						<a href="http://ieeexplore.ieee.org/abstract/document/7809158">
+						Document
+						</a>, <a href="http://people.csail.mit.edu/emer/papers/2010.06.isca.rrip.pdf">
+						 Referred Paper
+						</a>  </h6>
+					</td>
+				  </tr> 
+				</table></td>
+			  </tr>
+			  
+			</tbody>
+		  </table>
+		  <code><a href="#ddca" class="style6">To the Top</a></code>    
+		</div>
+    </section>
+	
+	<section id="Proj6">
+		<!--    
+		<h2>Paper III <small> Main Author </small></h2> -->
+		<h2><small>Development of IR-remote controlled audio player AC97 codec on vertex5 FPGA</small></h2>
+		<div align="justify">
+		  <table class="table table-bordered table-striped">
+			<tbody>
+		<!--  <tr>
+				<td>Title</td>
+				<td>Development of IR-remote controlled audio player AC97 codec on vertex5 FPGA</td>
+			  </tr> -->
+			  
+			  <tr>
+				<td>Contributors</td>
+				<td>
+					<a href="index.html"> P. Eedara</a>, 
+					N. R. A. Tungala
+				</td>
+			  </tr>
+			  
+			  <tr>
+				<td>Description</td>
+				<td><div align="justify"> 
+				     Developed drivers for audio codec and interrupt driven IR-Remote device that supports 
+					 audio playback with various playback rates and volume controls.
+					 </div></td>
+			  </tr>
+			  
+			  <tr>
+				<td>Keywords</td>
+				<td><div align="justify">
+					  drivers, audio codec, interrupt driven.
+				 </div></td> 
+			  </tr>
+			  
+			  <tr>
+				<td>Project Links</td>
+				<td><table>
+				  <tr>
+					<td> <h6>
+						<a href="http://ieeexplore.ieee.org/abstract/document/7809158">
+						Document
+						</a>, <a href="http://people.csail.mit.edu/emer/papers/2010.06.isca.rrip.pdf">
+						 Referred Paper
+						</a>  </h6>
+					</td>
+				  </tr> 
+				</table></td>
+			  </tr>
+			  
+			</tbody>
+		  </table>
+		  <code><a href="#ddca" class="style6">To the Top</a></code>    
+		</div>
+    </section>
+	
+	
+	<section id="Proj7">
+		<!--  
+		<h2>Paper III <small> Main Author </small></h2>    -->
+		<h2><small>Designing of Auto Track Receiver for Electronics Warfare systems</small></h2>
+		<div align="justify">
+		  <table class="table table-bordered table-striped">
+			<tbody>
+		<!--  <tr>
+				<td>Title</td>
+				<td>Designing of Auto Track Receiver for Electronics Warfare systems </td>
+			  </tr>  -->
+			  
+			  <tr>
+				<td>Contributors</td>
+				<td>
+					<a href="index.html"> P. Eedara</a>, 
+					N. R. A. Tungala
+				</td>
+			  </tr>
+			  
+			  <tr>
+				<td>Description</td>
+				<td><div align="justify"> 
+				     Designed an Auto Track Receiver circuit with an operating speed of 100ns for Electronic Warfare 
+					 System. Part of the receiver circuit was designed on FPGA using Verilog in Xilinx ISE design platform.
+					 </div></td>
+			  </tr>
+			  
+			  <tr>
+				<td>Keywords</td>
+				<td><div align="justify">
+					 FPGA, RTL design, synchronisation.
+				 </div></td> 
+			  </tr>
+			  
+			  <tr>
+				<td>Project Links</td>
+				<td><table>
+				  <tr>
+					<td><div align="justify"> 
+						<!-- <ul class="thumbnails span3 tile"> -->
+						<a href="ML-WLED.html" target="_blank" class="btn btn-mini btn-primary">Full Details</a>
+						<!-- </ul> -->
+					</div></td>
+				  </tr> 
+				</table></td>
+			  </tr>
+			  
+			</tbody>
+		  </table>
+		  <code><a href="#ddca" class="style6">To the Top</a></code>    
+		</div>
+    </section>
+	
+</div></div>   </div></div> 
+	
+
+<footer class="footer">
+    <div class="container">
+
+
+        <p class="pull-left"> Copyright © <a href="index.html">Pranay Kumar</a></p><p class="pull-right"><a style="color:inherit;" href="http://github.com/epranaykumar" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
+        <!--<div class="pull-right">
+            <ul class="nav nav-pills payments">
+              <li><a href="#"><i class="fa fa-github-square fa-2x"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+
+
+            </ul>
+        </div>
+        -->
+
+
+    </div>
+
+
+</footer>
+
+</body>
+</html>
