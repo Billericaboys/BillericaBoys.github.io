@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Machine Learning</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Academic website of Pranay Kumar">
+    <meta name="author" content="Pranay Kumar Eedara">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+<body data-spy="scroll" data-target=".subnav" data-offset="50" screen_capture_injected="true" background="images/bg.png">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-default">
+
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><b>Pranay Kumar Eedara</b></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html"><b>Home</b></a></li>
+
+
+                <li><a href="Resume.html"><b>Resume</b></a></li>
+                <li><a href="MyProjects.html"><b>Projects</b></a></li>
+                <li><a href="Publications.html"><b>Publications</b></a></li>
+                <li><a href="AboutMe.html"><b>AboutMe</b></a></li>
+
+                <!--<li><a href="#"><i class="fa fa-github-square fa-3x"></i></a></li> -->
+            </ul>
+
+
+
+        </div>
+    </div>
+</nav>
+<!-- Navigation Bar ends -->
+
+
+
+<div class="container">
+    <div class="jumbotron">
+
+        <section id="ML">
+            <h2 >Machine Learning</h2>
+        </section>
+
+        <div class="subnav">
+            <ul class="nav nav-pills style5">
+                <li><a href="#Proj1">Classification algorithms</a></li>
+				<li><a href="#Pub">Estimation algorithms </a></li>
+                <li><a href="#Pub">Socio-Physical Graph Reconstruction </a></li>				
+				<li><a href="#Proj3">Prediction Model with Industrial Data </a></li>
+				<li><a href="#Proj2">Evolutionary algorithms </a></li>
+				<li><a href="#Proj4">Prediction model with Medical Data  </a></li>
+				
+
+            </ul>
+        </div>
+
+<div class="row">
+<div class="col-md-12 col-sm-12">
+            <section id="Pub">
+		
+		<h3>Publications</h3>
+		<div align="justify">
+		  <table class="table table-bordered table-striped">
+			<tbody>
+		
+			  <tr>
+				<td>Journal</td>
+				<td>
+					<a href="Publications.html#Paper1"> Occupancy Estimation with Wireless Monitoring Devices and Application Specific Antennas</a>, 
+					
+				</td>
+			  </tr>
+			  
+			  <tr>
+				<td>conference</td>
+				<td><a href="Publications.html#Paper2"> Enhancing Machine Learning Techniques for Occupancy Estimation and Socio-Physical Graph Reconstruction
+Using Reconfigurable Antennas</a>
+				</td>
+			  </tr>
+			  
+			
+			</tbody>
+		  </table>
+		  <!-- <code><a href="#ML" class="style6">To the Top</a></code>    -->
+		</div>
+    </section>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-12 col-sm-12">
+
+	<h3>Projects</h3>		
+	<section id="Proj1">
+		<!--<p align="justify">Papers I,II,III are my research findings of the project "Evaluating the technical potential for wireless technology for in-vehicle communications".</p>-->
+	<!--<h2>Paper I <small> Main Author </small></h2> -->
+		<h2><small>Classification of wireless device location based on WiFi metadata</small></h2>
+		<div align="justify">
+		  <table class="table table-bordered table-striped">
+			<tbody>
+		<!--  <tr>
+				<td>Title</td>
+				<td>Implementation of Cache Replacement Policy using RRIP</td>
+			  </tr> -->
+			  
+			  <tr>
+				<td>Guidance</td>
+				<td>
+					<a href="http://www.ece.tamu.edu/~chmbrlnd/index.html">J.F. Chamberland</a>,
+					<a href="http://www.ghhuff.com/">G. H. Huff</a> 
+					
+				</td>
+			  </tr>
+			  
+			  <tr>
+				<td>Description</td>
+				<td><div align="justify"> 
+				     The Wi-Fi metadata of mobile devices can be obtained by deploying a network of monitoring devices 
+					 over Wi-Fi. Monitoring devices consist of network interface cards in monitoring mode and are capable
+					 of listening to all Wi-Fi packets in the network traffic. 
+				     This study examines the problem of estimating the occupancy of a region based on Wi-Fi metadata and
+					 compares the performance obtained with the data gathered by monitoring system with directional antennas
+					 to that of the same system with isotropic antennas. 
+					 <p></P>
+					 In this work, occupancy estimation is formulated as a classification problem, and logistic regression 
+					 and radial basis function networks are employed as the classification schemes. The metadata from Wi-Fi
+					 packets combined with received signal strengths from the monitoring antennas act as input to the classifiers.
+					 This work considers a specific scenario of occupancy estimation. The classification performance of the
+					 system is assessed with the synthetic data at different noise levels in the RSSI values, and with the
+					 experimental data obtained from a testbed implementation. The field data are acquired in a line-of-sight
+					 environment. 
+					 <p></P>
+					 This work introduces machine learning approaches for occupancy estimation based on Wi-Fi metadata and
+					 provides insight into the efficiency of directional antennas over isotropic antennas in the context of
+					 occupancy estimation. It also suggests that utilizing custom antenna designs based on the inference, 
+					 shape and size of the target region can significantly improve the performance of a Wi-Fi monitoring system.
+					 </div></td>
+			  </tr>
+			  
+			  <tr>
+				<td>Keywords</td>
+				<td><div align="justify">
+				 Machine Learning, Classification, Logistic regression, Gaussian kernels, Support Vector Machines (SVM).
+				 </div></td> 
+			  </tr>
+			  
+			  <tr>
+				<td>Project Links</td>
+				<td><table>
+				  <tr>				
+					<td><div align="justify"> 	
+						<a href="http://oaktrust.library.tamu.edu/handle/1969.1/159053" target="_blank" class="btn btn-mini btn-primary">Full Details</a>
+					</div></td>
+				  </tr> 
+				</table></td>
+			  </tr>
+			  
+			</tbody>
+		  </table>
+		  <code><a href="#ML" class="style6">To the Top</a></code>    
+		</div>
+    </section>
+	
+	
+	
+	
+	
+	<section id="Proj2">
+		<!--    
+		<h2>Paper III <small> Main Author </small></h2>-->
+		<h2><small>Evolutionary algorithms and their applications in Seating arrangement optimization</small></h2>
+		<div align="justify">
+		  <table class="table table-bordered table-striped">
+			<tbody>
+		<!--  <tr>
+				<td>Title</td>
+				<td>Hardware Modeling and RTL design of an image processor in SystemC and Verilog</td>
+			  </tr> -->
+			  
+			  <tr>
+				<td>Contributors</td>
+				<td>
+					<a href="index.html"> Pranay kumar</a>, 
+					
+				</td>
+			  </tr>
+			  
+			  <tr>
+				<td>Description</td>
+				<td><div align="justify"> 
+				     In this work, the optimization of seating arrangement of an examination hall is done by maximing the distance between the students 
+					 that belong to the same subject. Given a room configuration (No. of rows and coloumns) and the number of students, the objective is 
+					 to use biologically inspired optimization algorithms to propose the seating plan. Initially, the Particle Swarm Optimization is used to solve the
+					 problem at hand. But later different Soft & Evolutionary algorithms such as Ant Colony Optimization, Differential Evolution 
+					 and Genetic Algorithm are applied.
+					 </div></td>
+			  </tr>
+			  
+			  <tr>
+				<td>Keywords</td>
+				<td><div align="justify">
+					 Tags: genetic algorithms, differential evolution, particle swarm optimisation, ant colony optimization 
+				 </div></td> 
+			  </tr>
+			  
+			  <tr>
+				<td>Project Links</td>
+				<td><table>
+				  <tr>
+					<td><div align="justify"> 	
+						<a href="SeatArrange.html" target="_blank" class="btn btn-mini btn-primary">Full Details</a>
+					</div></td>
+				  </tr> 
+				</table></td>
+			  </tr>
+			  
+			</tbody>
+		  </table>
+		  <code><a href="#ML" class="style6">To the Top</a></code>    
+		</div>
+    </section>
+	
+	
+	<section id="Proj3">
+		<!--    
+		<h2>Paper III <small> Main Author </small></h2> -->
+		<h2><small>Prediction Model for New Product Development Rate (NPDR)</small></h2>
+		<div align="justify">
+		  <table class="table table-bordered table-striped">
+			<tbody>
+		<!--  <tr>
+				<td>Title</td>
+				<td>A Bio-Inspired Security Framework for System on Chip </td>
+			  </tr> -->
+			  
+			  <tr>
+				<td>Guidance</td>
+				<td>
+					<a href="http://www.iitbbs.ac.in/profile.php/gpanda/"> Prof.G.Panda, Deputy Director, IIT Bhubaneswar</a>
+				</td>
+			  </tr>
+			  
+			  <tr>
+				<td>Description</td>
+				<td><div align="justify"> 
+				     This work aims at modelling a relationship between the New Product Development Rate (NPDR) of an industry and the factors affecting it, so that the companies can make intelligent investment in this area.
+					 Three industries - Electronics, Auto mobiles & Construction are considered for this work and prediction models are developed for each industry using the corresponding data.
+					 <p></P>
+					 The prediction of New Product Development Rate is analysed using Functional Link Artificial Neural Network (FLANN) with trigonometric Expansion. The FLANN model is trained with
+					 LMS algorithm and RLS algorithm to learn the weights associated with the model. The mean absolute percentage error (MAPE) with respect to actual
+					 New Product Development Rate is used as Performance index of the model. The general experimental procedure for three industries 
+					 was discussed. Test results & simulations showed FLANN model with RLS training provides the best performance for Construction and
+					 Auto components industry and FLANN model with a neuron(sigmoid function) at the output provides the best performance for Electronics industry.
+					 This model has achieved Mean Average Percentage Error(MAPE) of less than 10% for each of these industries.
+				</div></td>
+			  </tr>
+			  
+			  <tr>
+				<td>Keywords</td>
+				<td><div align="justify">
+					 Logistic regression, Radial Basis Functions (RBF), Multilayer perceptrons(MLP), Functional link artificial neural network (FLANN), LMS , RLS
+				 </div></td> 
+			  </tr>
+			  
+			  <tr>
+				<td>Project Links</td>
+				<td><table>
+				  <tr>
+					<td> <h6>
+						<a href="https://drive.google.com/file/d/0B3cZGaUiYccoWGViQmdlOXNmR2M/view?usp=sharing">
+						Report
+						</a>, <a href="https://drive.google.com/open?id=0B3cZGaUiYccoUThvX08yelRJazg">
+						Presentation
+						</a>  </h6>
+					</td>
+				  </tr> 
+				</table></td>
+			  </tr>
+			  
+			</tbody>
+		  </table>
+		  <code><a href="#ML" class="style6">To the Top</a></code>    
+		</div>
+    </section>
+	
+	<section id="Proj4">
+		<!--    
+		<h2>Paper III <small> Main Author </small></h2> -->
+		<h2><small>Predictive model for diagnosis of Chronic Periodontal disease</small></h2>
+		<div align="justify">
+		  <table class="table table-bordered table-striped">
+			<tbody>
+		<!--  <tr>
+				<td>Title</td>
+				<td>Development of IR-remote controlled audio player AC97 codec on vertex5 FPGA</td>
+			  </tr> -->
+			  
+			  <tr>
+				<td>Guidance</td>
+				<td>
+					<a href="http://www.iitbbs.ac.in/profile.php/gpanda/"> Prof.G.Panda, Deputy Director, IIT Bhubaneswar</a>
+				</td>
+			  </tr>
+			  
+			  <tr>
+				<td>Description</td>
+				<td><div align="justify"> 					
+				     This project aims to improvise the dental care in developing countries (where the dentist to population ratio stands much lower at 
+					 1:22000(like India) compared to the WHO guidelines of at least 1:7500) by developing methods that can be used in 
+					 the absence of an expert clinician to accurately predict the disease condition given the patient symptoms. 
+					 This project was done under the guidance of Prof. Ganapati Panda, Deputy Director, IIT Bhubaneswar.
+					 <p></P>
+					 The Clinical data of patients was obtained by experts in periodontics after examination of patients in a non-numerical format.
+					 The data was collected from patients reporting to the department of Periodontics and Oral Implantology, Institute of Dental
+					 Sciences, Siksha ‘O’ Anusandhan university, Bhubaneswar, India. 
+					 <p></P>
+					 The Functional link artificial neural network (FLANN) is used to model the non-linear input-output relationship. The FLANN model substantially increases the non-linearity 
+					 of the input elements by using functional expansion and it has faster convergence rate and lesser computational load.
+					 This model has achieved 99.11% accuracy with high sensitivity and specificity which makes it an excellent model in the field of
+					 diagnostic medicine.
+					 <p></P>
+					 For further details i.e., design of input data and features, development of the model: experimental conditions, training, validation and testing, performance results
+					 refer to the attached document.
+					 </div></td>
+			  </tr>
+			  
+			  <tr>
+				<td>Keywords</td>
+				<td><div align="justify">
+					  Functional link artificial neural network(FLANN), multilayered artificial neural networks (MLANN), LMS , RLS
+				 </div></td> 
+			  </tr>
+			  
+			  <tr>
+				<td>Project Links</td>
+				<td><table>
+				  <tr>
+					<td> <h6>
+						<a href="https://drive.google.com/open?id=0B3cZGaUiYccoQW9WUF9YZF8wY0U">
+						Document
+						</a>
+						</h6>
+					</td>
+				  </tr> 
+				</table></td>
+			  </tr>
+			  
+			</tbody>
+		  </table>
+		  <code><a href="#ML" class="style6">To the Top</a></code>    
+		</div>
+    </section>
+	
+	
+</div></div>   </div></div> 
+	
+
+<footer class="footer">
+    <div class="container">
+
+
+        <p class="pull-left"> Copyright © <a href="index.html">Pranay Kumar</a></p><p class="pull-right"><a style="color:inherit;" href="http://github.com/epranaykumar" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
+        <!--<div class="pull-right">
+            <ul class="nav nav-pills payments">
+              <li><a href="#"><i class="fa fa-github-square fa-2x"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+
+
+            </ul>
+        </div>
+        -->
+
+
+    </div>
+
+
+</footer>
+
+</body>
+</html>
