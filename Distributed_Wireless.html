@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Distributed Wireless Monitoring system </title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="Academic website of Pranay Kumar">
+	<meta name="author" content="Pranay Kumar Eedara">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+	<!-- Custom styles for this template -->
+	<link href="css/sticky-footer-navbar.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="css/custom.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body data-spy="scroll" data-target=".subnav" data-offset="50" screen_capture_injected="true" background="images/bg.png">
+
+<!-- Navigation Bar -->
+<<nav class="navbar navbar-default">
+
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html"><b>Pranay Kumar Eedara</b></a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html"><b>Home</b></a></li>
+
+
+				<li><a href="Resume.html"><b>Resume</b></a></li>
+				<li><a href="MyProjects.html"><b>Projects</b></a></li>
+				<li><a href="Publications.html"><b>Publications</b></a></li>
+				<li><a href="AboutMe.html"><b>AboutMe</b></a></li>
+
+				<!--<li><a href="#"><i class="fa fa-github-square fa-3x"></i></a></li> -->
+			</ul>
+
+
+
+		</div>
+	</div>
+</nav>
+<div class="container">
+
+	<div class="jumbotron">
+		<p id="WVehicle"> </p>
+
+		<div>
+			<h1><small>Distributed Wireless Monitoring System</small> </h1>
+		</div>
+
+		<ul class="breadcrumb">
+			<li>
+				<a href="index.html" class="style8">Home</a> <span class="divider">/</span>	  </li>
+			<li>
+				<a href="MyProjects.html" class="style8">MyProjects</a> <span class="divider">/</span>	  </li>
+			<li class="active style8">Distributed Wireless Monitoring System</li>
+		</ul>
+		<div class="row">
+
+
+			<div class="col-md-9 col-sm-9">
+				<div class="padadjust"><h2>Overview</h2>
+					A distributed Wi-Fi monitoring system is designed to monitor wireless networks operating on the 2.4 GHz ISM radio band. 
+					The Wi-Fi monitoring system consists of multiple monitoring devices and each monitoring device extracts the MAC address 
+					and RSSI measurement for every monitored packet. Each wireless device is identified by its unique MAC address and
+					RSSI values belonging to a particular device are grouped together based on its MAC address.
+					The purpose of the system is to acquire the field measurements of the RSSI values of observed devices under different 
+					radiation characteristics of the sensing antennas. 
+					<br><br>
+					The experiment was implemented inside a 50 m × 50 m open space area in the parking lot 100j at Texas A\&M university.
+					In this experimental setting, the target area At is considered to be a square of dimension 20 m × 20 m inscribed in a 
+					larger square of dimension 50 m × 50 m.  The distributed monitoring system consists of four monitoring devices placed 
+					at the corners of the target area and a central server to integrate the information from all monitoring devices
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<a class="thumbnail">
+					
+					Supervisor: Dr. J-F Chamberland<br> Texas A&amp;M University  
+					 
+
+				</a>
+			</div>
+	
+			<br/>
+		</div>
+		<div class="row">
+
+
+			<div class="padadjust">
+			<div class="col-sm-12 col-md-12">
+<h3>Monitoring Devices</h3>
+Every monitoring device takes the form of a dedicated Next Unit of Computing
+(NUC) by Intel™ and it runs an instance of GNU/Linux as its operating system. Each
+NUC is equipped with two external wireless network interface cards with detachable 
+antennas. Wireless monitoring is enabled by setting these external network cards to monitoring
+mode. The functionality of an NUC is to decode the packets captured by the network
+interface cards and also to filter and store the packet information in a database. For this,
+a custom software is developed in C language using the pcap application programming
+interface (API). This software deciphers the transmitter MAC address and the RSSI information
+from the captured packets. For every pertinent packet, it stores the retrieved
+information along with the time stamp of the packet capture to a local SQLite database.
+This software filters redundant data using a hash table, which naturally removes duplicates
+within detected MAC addresses. The monitoring device set up is shown in Fig
+						<div class="col-sm-12 col-md-12">
+							<div class="thumbnail">
+								<img src="images\projects\distributed_wireless\DeviceSetup.jpg" alt="Monitoring device setup" >
+								<div class="caption">
+
+									<h6 align="center"> Monitoring device setup with Intel™ NUC and custom antenna design 
+									 </h6>
+
+								</div>
+							</div>
+						</div>
+
+	<br><br>
+	<h3>Monitoring Antennas</h3>
+	<br>
+In this experimental setup, Alfa™ AWUS036NHA wireless interfaces are used as the
+external network cards. It enables operators to launch IEEE 802.11b/g/n wireless network
+at 150 Mbps in the 2.4GHz band, which is also compatible with IEEE 802.11b/g wireless
+devices at 54 Mbps. These interfaces are composed of a detachable antenna and an
+Atheros™ chipset. The Atheros™ chipset provides two modes of operation - Managed
+and Monitor. In monitoring mode, the chipset is capable of listening to all traffic present
+on a channel in a 2.4 GHz band.
+The default antennas of the network cards attached to the NUC are replaced with
+custom designed isotropic and directional patch antennas. The custom designed antennas
+are depicted in Fig. 5.1. To reduce noise levels, the antennas are placed at a height of
+5 ft from the ground using dowels and mounts for the NUCs. The mounts for the NUCs
+are designed using SolidWorks, and they are 3D printed with a Makerbot-2 device. The
+antennas are placed at different heights to reduce coupling among them. The NUCs are
+powered with extension cables using an inverter from a car.
+
+<br><br>
+	<h3>Central Server</h3>
+	<br> 
+The central server is designed to collect and integrate information from all monitoring
+devices. In the experimental setup, the transfer of information from monitoring devices
+to the central server is made via the TCP protocol. At the central server, each wireless device
+is identified by its unique MAC address, and RSSI values belonging to a particular
+device are grouped together based on its MAC address. The fusion center possesses side
+information in the form of the locations of sensing devices, their orientations and antenna
+properties. We use this data for multiple purposes, for example to study the effect of using directional and omni-directional
+antennae in the network cards and to compare their classification performance on the observed
+devices
+<br><br>
+	<h3>Wireless Agents</h3>
+	<br>
+						<div class="col-sm-12 col-md-12">
+							<div class="thumbnail">
+								<img src="images\projects\distributed_wireless\data_acquiring_3.png" alt=": Experimental area" >
+								<div class="caption">
+
+									<h6 align="center"> Experimental Area</h6>
+
+								</div>
+							</div>
+						</div>
+The wireless agents are Android™ smartphones and laptops with isotropic antennas.
+In this study, we assume that the wireless users are quasistatic and an inference task is
+performed over a single monitoring period. Although it is possible to incorporate moving
+agents and streaming observations into the problem formulation, these features render the
+analysis more challenging and they are not necessary to achieve our goal of better understanding
+the interplay between antenna profiles and RF monitoring. As such, advanced
+mobility models and their ramifications are relegated to future work in favor of a simpler,
+explicative model suited to our main purpose.
+Throughout the course of the experiment, every wireless unit runs a custom app,
+which logs GPS coordinates and time. The app is required to establish a ground truth
+about each location. All the agents are operating on the same wireless network, and they
+periodically transmit the information collected by the app to a central location. MAC addresses
+and time stamps are then used to match locations to power vectors at the inference
+center, thereby establishing the desired ground truth.
+
+<br><br>
+<h3>Experimental Samples</h3>
+<br>
+
+						<div class="col-sm-12 col-md-12">
+							<div class="thumbnail">
+								<img src="images\projects\distributed_wireless\data_acquired.png" alt="Data Acquired" >
+								<div class="caption">
+
+									<h6 align="center">Sample locations for the acquired data during the field experiment. </h6>
+
+								</div>
+							</div>
+						</div>
+Altogether, the experimental set contains approximately 800 power and location vectors
+for monitoring devices with isotropic antennas, and another 800 power and location
+vectors for a system with directional antennas. Since there are four monitoring devices,
+this is equivalent to 6,400 distinct points. For every location inside the overall region, the
+signal strengths received at the four monitoring units are aggregated into a single vector
+p, which serves as input to the classification algorithms. The estimates are then compared
+with the ground truth derived from the known locations. The locations of the data points
+obtained from the field experiment are shown in Fig. 5.2. The red marks indicate the locations
+of monitoring units and the green dots indicate the locations of the collected data
+points.
+
+
+				
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+			<!--<hr class="soften">-->
+			<!-- /.marketing -->
+
+			<!-- Footer
+        ================================================== -->
+
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+
+
+		<p class="pull-left"> Copyright © <a href="index.html">Pranay Kumar</a></p><p class="pull-right"><a style="color:inherit;" href="http://github.com/epranaykumar" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
+		<!--<div class="pull-right">
+            <ul class="nav nav-pills payments">
+              <li><a href="#"><i class="fa fa-github-square fa-2x"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+
+
+            </ul>
+        </div>
+        -->
+
+
+	</div>
+
+
+</footer>
+
+
+</body></html>
