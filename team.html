@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<title>Billerica Boys</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+div.gallery {
+    margin: 25px;
+    float:left;
+    width: 180px;
+	background-color: white;
+
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+	background-color: white;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+	
+}
+</style>
+
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card-2 w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Billerica Boys</a>
+  <a href="team.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+  <a href="#matches" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Matches</a>
+  <a href="#ranking" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Ranking</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">More info<i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button">Gallery</a>
+         </div>
+  </div>
+  <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>-->
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="team.html" class="w3-bar-item w3-button">Team</a>
+    <a href="#matches" class="w3-bar-item w3-button">Matches</a>
+    <a href="#ranking" class="w3-bar-item w3-button">Ranking</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+  </div>
+</div>
+
+
+
+<!-- Team Container -->
+<br>
+
+
+<div class="gallery">
+ 
+    <img src="images/ajay.jpg" alt="Ajay" width="300" height="200">
+  
+  <div class="desc">Ajay</div>
+</div>
+
+<div class="gallery">
+ 
+    <img src="images/anand.jpg" alt="Anand" width="300" height="200">
+  
+  <div class="desc">Anand</div>
+</div>
+
+
+<div class="gallery">
+ 
+    <img src="images/avinash.jpg" alt="Avinash" width="300" height="200">
+  
+  <div class="desc">Avinash</div>
+</div>
+
+<div class="gallery">
+ 
+    <img src="images/ashwin reddy.jpg" alt="Ashwin" width="300" height="200">
+  
+  <div class="desc">Ashwin</div>
+</div>
+<div class="gallery">
+ 
+    <img src="images/rakesh.jpg" alt="Rakesh" width="300" height="200">
+  
+  <div class="desc">Rakesh</div>
+</div>
+
+<div class="gallery">
+ 
+    <img src="images/murali.jpg" alt="Murali" width="300" height="200">
+	<div class="desc">Murali</div>
+</div>
+<div class="gallery">
+ 
+    <img src="images/shanmukh.jpg" alt="Shanmukh" width="300" height="200">
+  
+ <div class="desc">Shanmukh</div>
+</div>
+
+<div class="gallery">
+ 
+    <img src="images/mohit.jpg" alt="Mohit" width="300" height="200">
+	<div class="desc">Mohit</div>
+</div>
+<div class="gallery">
+ 
+    <img src="images/Bharadwaj.jpg" alt="Bharadwaj" width="300" height="200">
+  
+  <div class="desc">Bharadwaj</div>
+</div>
+
+</div>
+<!--<div class="clear"></div>
+<br>
+<br>
+                  <h2 class="h1-np mt10">Players</h2>
+          <section class="series-squad eventtracker" data-event-sub-cat="Players - Listing" data-event-order="yes">
+                      <figure class=".col-md-3">
+             
+                <img src="images/ajay.jpg" alt="Ajay" width="100" height="100" mar>
+                <figcaption>
+                <h4>Ajay</h4>
+                  
+               
+                </figcaption> 
+                   
+            </figure>
+                      <figure>
+              
+                <img src="images/anand.jpg" alt="Anand" width="100" height="100">
+                <figcaption>
+                <h4>Anand</h4>
+                               
+                
+                
+                </figcaption> 
+				</figure>	
+				
+				<figure class="col-xs-4 col-sm-4 col-md-3">
+              
+                <img src="images/avinash.jpg" alt="Avinash" width="100" height="100">
+                <figcaption>
+                <h4>Avinash</h4>
+                               
+                
+               
+                </figcaption> 
+				</figure>	
+				<figure class="col-xs-4 col-sm-4 col-md-3">
+              
+                <img src="images/abhijit.jpg" alt="Abhijit" width="100" height="100">
+                <figcaption>
+                <h4>Abhijit</h4>
+                               
+                
+                
+                </figcaption> 
+				</figure>	
+				<figure class="col-xs-4 col-sm-4 col-md-3">
+              
+                <img src="images/mohit.jpg" alt="Mohit" width="100" height="100">
+                <figcaption>
+                <h4>Mohit</h4>
+                               
+                
+                
+                </figcaption> 
+				</figure>
+				
+				<figure class="col-xs-4 col-sm-4 col-md-3">
+              
+                <img src="images/ashwin reddy.jpg" alt="ashwin reddy" width="100" height="100">
+                <figcaption>
+                <h4>Ashwin</h4>
+                               
+                
+            
+                </figcaption> 
+				</figure>
+				
+				<figure class="col-xs-4 col-sm-4 col-md-3">
+              
+                <img src="images/murali.jpg" alt="Murali" width="100" height="100">
+                <figcaption>
+                <h4>Murali</h4>
+                               
+                
+                
+                </figcaption> 
+				</figure>
+				<figure class="col-xs-4 col-sm-4 col-md-3">
+              
+                <img src="images/rakesh.jpg" alt="Rakesh" width="100" height="100">
+                <figcaption>
+                <h4>Rakesh</h4>
+                               
+                
+               
+                </figcaption> 
+				</figure>
+				
+				<figure class="col-xs-4 col-sm-4 col-md-3">
+              
+                <img src="images/shanmukh.jpg" alt="Shanmukh" width="100" height="100">
+                <figcaption>
+                <h4>Shanmukh</h4>
+                               
+                
+              
+                </figcaption> 
+				</figure>
+				<figure class="col-xs-4 col-sm-4 col-md-3">
+              
+                <img src="images/Bharadwaj.jpg" alt="Bharadwaj" width="100" height="100">
+                <figcaption>
+                <h4>Bharadwaj</h4>
+                               
+                
+                
+                </figcaption> 
+				</figure>
+
+				
+				</div>-->
+              
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="instagram"><i class="fa fa-instagram"></i></a>
+  <!--<a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>-->
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+   <!-- <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   -->
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+
+
+// Close side navigation
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
